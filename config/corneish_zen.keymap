@@ -138,14 +138,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <36 41>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
