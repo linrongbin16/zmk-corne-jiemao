@@ -1,6 +1,3 @@
-1. Corne 3x6 + epaper + RGB
-2. The key matrix is same as normal corne
-
 > [!IMPORTANT]
 >
 > **Please use the [Online ZMK Editor](https://nickcoutsos.github.io/keymap-editor) to build firmware with GitHub actions.**
