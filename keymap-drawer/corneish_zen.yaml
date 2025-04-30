@@ -15,14 +15,14 @@ layers:
   - {type: none}
   - {type: none}
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: ':', s: ':'}
   - {type: none}
   - $$mdi:apple-keyboard-caps$$
@@ -36,7 +36,7 @@ layers:
   - {t: ',', h: <, s: <}
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '''', h: Media, s: '"'}
   - {t: '$$mdi:keyboard-space$$', h: Fun}
   - {t: ESC, h: Nav}
@@ -65,7 +65,7 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -79,7 +79,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
@@ -108,7 +108,7 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -122,7 +122,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - '{'
   - '}'
   - '~'
@@ -151,21 +151,21 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {type: none}
   - {type: held}
@@ -187,7 +187,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
@@ -197,7 +197,7 @@ layers:
   - F6
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -258,6 +258,3 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-combos:
-- p: [36, 41]
-  k: $$mdi:download-circle$$
