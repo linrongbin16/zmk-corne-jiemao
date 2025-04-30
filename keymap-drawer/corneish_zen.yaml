@@ -24,7 +24,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ;, h: ':', s: ':'}
-  - {t: '''', s: '"'}
+  - {type: none}
   - $$mdi:apple-keyboard-caps$$
   - Z
   - X
@@ -37,12 +37,12 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - Num
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: '$$mdi:keyboard-return$$', h: Nav}
-  - Sym
-  - $$mdi:apple-keyboard-option$$
+  - {t: '''', h: Media, s: '"'}
+  - {t: '$$mdi:keyboard-space$$', h: Fun}
+  - {t: ESC, h: Nav}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
+  - {t: \, h: '|', s: '|'}
   Num:
   - {type: none}
   - {type: none}
@@ -81,9 +81,9 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - {t: '[', s: '{'}
-  - {t: ']', s: '}', type: held}
+  - {t: ']', s: '}'}
   - {t: '`', s: '~'}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   Sym:
@@ -169,7 +169,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: held}
-  - {type: held alternate}
+  - {type: none}
   - {type: none}
   - {type: none}
   Fun:
@@ -210,7 +210,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -252,7 +252,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
