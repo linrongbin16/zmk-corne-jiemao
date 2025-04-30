@@ -232,10 +232,10 @@
 
         Media {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none  &out OUT_TOG
-&none  &none  &none  &none  &none  &none    &none  &none       &none       &none       &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none       &none       &none       &none  &none
-                     &none  &none  &none    &none  &none       &none
+&none  &none  &none  &none  &none  &none          &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none  &out OUT_TOG
+&none  &none  &none  &none  &none  &bootloader    &bootloader  &none       &none       &none       &none  &none
+&none  &none  &none  &none  &none  &none          &none        &none       &none       &none       &none  &none
+                     &none  &none  &none          &none        &none       &none
             >;
 
             label = "Media";
