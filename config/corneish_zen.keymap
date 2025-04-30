@@ -1,0 +1,244 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    chosen {
+        zmk,matrix_transform = &default_transform;
+
+        // zmk,matrix_transform = &five_column_transform;
+    };
+};
+
+/ {
+    behaviors {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+        };
+
+        hml: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        hmlf: homerow_mods_left_f {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_F";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <110>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        hmrj: homerow_mods_right_j {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT_J";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <110>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        tpmol: tap_mo_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_MO_LEFT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <105>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        tpmor: tap_mo_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_MO_RIGHT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <105>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            hold-trigger-on-release;
+        };
+    };
+
+    macros {
+        tap2_macro: tap2_macro {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER &macro_param_2to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>;
+
+            label = "TAP2_MACRO";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <36 41>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        Qwer {
+            display-name = "QWERTY";
+
+            // --------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | 
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            bindings = <
+&kp TAB       &kp Q  &kp W            &kp E                  &kp R               &kp T           &kp Y           &kp U                &kp I                &kp O                 &kp P               &none
+&none         &kp A  &hml LEFT_GUI S  &hml LEFT_CONTROL D    &hmlf LEFT_SHIFT F  &kp G           &kp H           &hmrj RIGHT_SHIFT J  &hmr RIGHT_SHIFT K   &hmr RIGHT_GUI L      &as COLON SEMI      &none
+&kp CAPSLOCK  &kp Z  &kp X            &kp C                  &kp V               &kp B           &kp N           &kp M                &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH  &kp RIGHT_ALT
+                                      &tpmol 5 SINGLE_QUOTE  &tpmol 4 SPACE      &tpmor 3 ESC    &tpmor 1 ENTER  &tpmor 2 BACKSPACE   &as PIPE BACKSLASH
+            >;
+
+            label = "Qwer";
+        };
+
+        Num {
+            display-name = "NUMBER";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&none  &none  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &none            &none              &none          &none  &none
+&none  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none  &none
+&none  &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &none            &none              &none          &none  &kp RIGHT_ALT
+                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none            &none
+            >;
+
+            label = "Num";
+        };
+
+        Sym {
+            display-name = "SYMBOL";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&none  &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none            &none              &none          &none  &none
+&none  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none  &none
+&none  &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &none            &none              &none          &none  &kp RIGHT_ALT
+                               &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none            &none
+            >;
+
+            label = "Sym";
+        };
+
+        Nav {
+            display-name = "Fn";
+            bindings = <
+&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none    &none  &none            &none              &none          &none  &none
+&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none  &none
+&none  &none  &none           &none           &none            &none    &none  &none            &none              &none          &none  &kp RIGHT_ALT
+                              &none           &none            &none    &none  &none            &none
+            >;
+
+            label = "Nav";
+        };
+
+        Fun {
+            bindings = <
+&none         &none  &none         &none             &none           &none    &kp F10  &kp F7  &kp F8  &kp F9  &none  &none
+&none         &none  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &kp F11  &kp F4  &kp F5  &kp F6  &none  &none
+&kp LEFT_ALT  &none  &none         &none             &none           &none    &kp F12  &kp F1  &kp F2  &kp F3  &none  &none
+                                   &none             &none           &none    &none    &none   &none
+            >;
+
+            label = "Fun";
+        };
+
+        Media {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none  &out OUT_TOG
+&none  &none  &none  &none  &none  &none    &none  &none       &none       &none       &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none       &none       &none       &none  &none
+                     &none  &none  &none    &none  &none       &none
+            >;
+
+            label = "Media";
+        };
+    };
+};
