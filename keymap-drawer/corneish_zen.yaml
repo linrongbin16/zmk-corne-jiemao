@@ -51,9 +51,9 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <-
+  - ->
+  - =>
   - {type: none}
   - {type: none}
   - {type: none}
@@ -75,9 +75,9 @@ layers:
   - {t: '3', s: '#'}
   - {t: '=', s: +}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <=
+  - '>='
+  - '!='
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - {t: '[', s: '{'}
@@ -94,9 +94,9 @@ layers:
   - (
   - )
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <-
+  - ->
+  - =>
   - {type: none}
   - {type: none}
   - {type: none}
@@ -118,9 +118,9 @@ layers:
   - '#'
   - +
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <=
+  - '>='
+  - '!='
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - '{'
@@ -132,9 +132,9 @@ layers:
   Nav:
   - {type: none}
   - {type: none}
-  - HOME
+  - {type: none}
   - $$mdi:arrow-up$$
-  - END
+  - Ctl+R
   - {type: none}
   - {type: none}
   - {type: none}
@@ -143,11 +143,11 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - HOME
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - {type: none}
+  - END
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
@@ -155,10 +155,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {type: none}
   - {type: none}
   - {type: none}
