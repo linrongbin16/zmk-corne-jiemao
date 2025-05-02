@@ -136,6 +136,20 @@
 
             label = "TAP2_MACRO";
         };
+
+        holdtap_macro: holdtap_macro {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&kp MACRO_PLACEHOLDER &macro_param_2to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>;
+
+            label = "HOLDTAP_MACRO";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
