@@ -203,10 +203,10 @@
         Nav {
             display-name = "Fn";
             bindings = <
-&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none    &none  &none            &none              &none          &none  &none
-&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
-&none  &none  &none           &none           &none            &none    &none  &none            &none              &none          &none  &kp RIGHT_GUI
-                              &none           &none            &none    &none  &none            &none
+&none  &none      &none           &kp UP_ARROW    &kp LC(R)        &none      &none  &none            &none              &none          &none  &none
+&none  &kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
+&none  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &none      &none  &none            &none              &none          &none  &kp RIGHT_GUI
+                                  &none           &none            &none      &none  &none            &none
             >;
 
             label = "Nav";
