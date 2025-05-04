@@ -132,9 +132,10 @@ layers:
   Nav:
   - {type: none}
   - {type: none}
-  - {type: none}
+  - HOME
   - $$mdi:arrow-up$$
   - Ctl+R
+  - END
   - {type: none}
   - {type: none}
   - {type: none}
@@ -142,12 +143,11 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - HOME
+  - Ctl+A
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - END
+  - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
