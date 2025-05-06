@@ -136,7 +136,7 @@ layers:
   - $$mdi:arrow-up$$
   - Ctl+R
   - END
-  - {type: none}
+  - Ctl+Y
   - {type: none}
   - {type: none}
   - {type: none}
@@ -147,7 +147,7 @@ layers:
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - {type: none}
+  - PgUp
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
@@ -159,7 +159,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - {type: none}
+  - PgDn
   - {type: none}
   - {type: none}
   - {type: none}
