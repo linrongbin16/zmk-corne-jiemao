@@ -143,8 +143,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Qwer {
-            display-name = "QWERTY";
+        Qwer-Win {
+            display-name = "Qwer-Win";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -159,11 +159,11 @@
                                       &tpmol 5 SINGLE_QUOTE  &tpmol 4 SPACE      &tpmor 3 ESC    &tpmor 1 ENTER  &tpmor 2 BACKSPACE   &as PIPE BACKSLASH
             >;
 
-            label = "Qwer";
+            label = "Qwer-Win";
         };
 
-        Num {
-            display-name = "NUMBER";
+        Num-Win {
+            display-name = "Num-Win";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -178,10 +178,10 @@
                             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
             >;
 
-            label = "Num";
+            label = "Num-Win";
         };
 
-        Sym {
+        Sym-Win {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -197,10 +197,10 @@
                                &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
             >;
 
-            label = "Sym";
+            label = "Sym-Win";
         };
 
-        Nav {
+        Nav-Win {
             display-name = "Fn";
             bindings = <
 &none  &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &none            &none              &none          &none  &none
@@ -209,10 +209,10 @@
                                   &none           &none            &none            &none      &none            &none
             >;
 
-            label = "Nav";
+            label = "Nav-Win";
         };
 
-        Fun {
+        Fun-Win {
             bindings = <
 &none         &none  &none         &none             &none           &none    &kp F10  &kp F7  &kp F8  &kp F9  &none  &none
 &none         &none  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &kp F11  &kp F4  &kp F5  &kp F6  &none  &none
@@ -220,18 +220,82 @@
                                    &none             &none           &none    &none    &none   &none
             >;
 
-            label = "Fun";
+            label = "Fun-Win";
         };
 
-        Media {
+        Media-Win {
             bindings = <
 &none  &none  &none  &none  &none  &none          &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none  &out OUT_TOG
 &none  &none  &none  &none  &none  &bootloader    &bootloader  &none       &none       &none       &none  &none
-&none  &none  &none  &none  &none  &none          &none        &none       &none       &none       &none  &none
+&none  &none  &none  &none  &none  &none          &none        &none       &none       &none       &none  &to 6
                      &none  &none  &none          &none        &none       &none
             >;
 
-            label = "Media";
+            label = "Media-Win";
+        };
+
+        Qwer-Mac {
+            label = "Qwer-Mac";
+            display-name = "Qwer-Mac";
+            bindings = <
+&kp TAB       &kp Q  &kp W            &kp E                   &kp R               &kp T           &kp Y           &kp U                &kp I                 &kp O                 &kp P               &none
+&none         &kp A  &hml LEFT_GUI S  &hml LEFT_CONTROL D     &hmlf LEFT_SHIFT F  &kp G           &kp H           &hmrj RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L      &as COLON SEMI      &none
+&kp CAPSLOCK  &kp Z  &kp X            &kp C                   &kp V               &kp B           &kp N           &kp M                &as LESS_THAN COMMA   &as GREATER_THAN DOT  &as QUESTION SLASH  &kp RIGHT_ALT
+                                      &tpmol 11 SINGLE_QUOTE  &tpmol 10 SPACE     &tpmor 9 ESC    &tpmor 7 ENTER  &tpmor 8 BACKSPACE   &as PIPE BACKSLASH
+            >;
+        };
+
+        Num-Mac {
+            label = "Num-Mac";
+            display-name = "Num-Mac";
+            bindings = <
+&none  &none  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
+&none  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &kp RIGHT_SHIFT              &kp RIGHT_CONTROL               &kp RIGHT_GUI                   &none  &none
+&none  &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
+                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
+            >;
+        };
+
+        Sym-Mac {
+            label = "Sym-Mac";
+            display-name = "SYMBOL";
+            bindings = <
+&none  &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
+&none  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &kp RIGHT_SHIFT              &kp RIGHT_CONTROL               &kp RIGHT_GUI                   &none  &none
+&none  &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
+                               &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
+            >;
+        };
+
+        Nav-Mac {
+            label = "Nav-Mac";
+            display-name = "Fn";
+            bindings = <
+&none  &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &none            &none              &none          &none  &none
+&none  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
+&none  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &none      &none            &none              &none          &none  &kp RIGHT_GUI
+                                  &none           &none            &none            &none      &none            &none
+            >;
+        };
+
+        Fun-Mac {
+            label = "Fun-Mac";
+            bindings = <
+&none         &none  &none         &none             &none           &none    &kp F10  &kp F7  &kp F8  &kp F9  &none  &none
+&none         &none  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &kp F11  &kp F4  &kp F5  &kp F6  &none  &none
+&kp LEFT_GUI  &none  &none         &none             &none           &none    &kp F12  &kp F1  &kp F2  &kp F3  &none  &none
+                                   &none             &none           &none    &none    &none   &none
+            >;
+        };
+
+        Media-Mac {
+            label = "Media-Mac";
+            bindings = <
+&none  &none  &none  &none  &none  &none          &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none  &out OUT_TOG
+&none  &none  &none  &none  &none  &bootloader    &bootloader  &none       &none       &none       &none  &none
+&none  &none  &none  &none  &none  &none          &none        &none       &none       &none       &none  &to 0
+                     &none  &none  &none          &none        &none       &none
+            >;
         };
     };
 };
