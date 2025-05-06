@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
-  Qwer:
+  Qwer-Win:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -37,13 +37,13 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: '''', h: Media, s: '"'}
-  - {t: '$$mdi:keyboard-space$$', h: Fun}
-  - {t: ESC, h: Nav}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
-  - {t: '$$mdi:backspace-outline$$', h: Sym}
+  - {t: '''', h: Media-Win, s: '"'}
+  - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
+  - {t: ESC, h: Nav-Win}
+  - {t: '$$mdi:keyboard-return$$', h: Num-Win}
+  - {t: '$$mdi:backspace-outline$$', h: Sym-Win}
   - {t: \, h: '|', s: '|'}
-  Num:
+  Num-Win:
   - {type: none}
   - {type: none}
   - {t: '7', s: '&'}
@@ -86,7 +86,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  Sym:
+  Sym-Win:
   - {type: none}
   - {type: none}
   - '&'
@@ -129,7 +129,7 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
-  Nav:
+  Nav-Win:
   - {type: none}
   - {type: none}
   - HOME
@@ -172,7 +172,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  Fun:
+  Fun-Win:
   - {type: none}
   - {type: none}
   - {type: none}
@@ -215,7 +215,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  Media:
+  Media-Win:
   - {type: none}
   - {type: none}
   - {type: none}
@@ -251,7 +251,265 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {t: Qwer-Mac, h: to}
+  - {type: held}
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  Qwer-Mac:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {type: none}
+  - {type: none}
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ;, h: ':', s: ':'}
+  - {type: none}
+  - $$mdi:apple-keyboard-caps$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>', s: '>'}
+  - {t: /, h: '?', s: '?'}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '''', h: Media-Mac, s: '"'}
+  - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
+  - {t: ESC, h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
+  - {t: '$$mdi:backspace-outline$$', h: SYMBOL}
+  - {t: \, h: '|', s: '|'}
+  Num-Mac:
+  - {type: none}
+  - {type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {type: none}
+  - <=
+  - '>='
+  - '!='
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '`', s: '~'}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  SYMBOL:
+  - {type: none}
+  - {type: none}
+  - '&'
+  - '*'
+  - (
+  - )
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $
+  - '%'
+  - ^
+  - _
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '!'
+  - '@'
+  - '#'
+  - +
+  - {type: none}
+  - <=
+  - '>='
+  - '!='
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
+  - '{'
+  - '}'
+  - '~'
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  Fn:
+  - {type: none}
+  - {type: none}
+  - HOME
+  - $$mdi:arrow-up$$
+  - Ctl+R
+  - END
+  - Ctl+Y
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - Ctl+A
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - PgUp
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - PgDn
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  Fun-Mac:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F10
+  - F7
+  - F8
+  - F9
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: none}
+  - F11
+  - F4
+  - F5
+  - F6
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F12
+  - F1
+  - F2
+  - F3
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  Media-Mac:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
+  - {type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:download-circle$$
+  - $$mdi:download-circle$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: Qwer-Win, h: to}
   - {type: held}
   - {type: none}
   - {type: none}
