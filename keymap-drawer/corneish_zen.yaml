@@ -213,7 +213,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   - {type: none}
   Media-Win:
   - {type: none}
@@ -256,7 +256,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   - {type: none}
   Qwer-Mac:
   - $$mdi:keyboard-tab$$
@@ -471,7 +471,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   - {type: none}
   Media-Mac:
   - {type: none}
@@ -514,5 +514,5 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   - {type: none}
