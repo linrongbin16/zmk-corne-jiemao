@@ -137,7 +137,7 @@ layers:
   - Ctl+R
   - END
   - Ctl+Y
-  - {type: none}
+  - Ctl+U
   - {type: none}
   - {type: none}
   - {type: none}
@@ -392,16 +392,16 @@ layers:
   - {type: none}
   - HOME
   - $$mdi:arrow-up$$
-  - Ctl+R
+  - REDO
   - END
-  - Ctl+Y
+  - Gui+Y
+  - Gui+U
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - Ctl+A
+  - Gui+A
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
@@ -413,10 +413,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - PgDn
   - {type: none}
   - {type: none}

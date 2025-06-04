@@ -773,8 +773,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+Y</text>
 </g>
-<g transform="translate(588, 35)" class="key none keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(588, 35)" class="key keypos-7">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctl+U</text>
 </g>
 <g transform="translate(644, 28)" class="key none keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1731,7 +1732,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+R</text>
+<text x="0" y="0" class="key tap">REDO</text>
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1739,10 +1740,11 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Y</text>
+<text x="0" y="0" class="key tap">Gui+Y</text>
 </g>
-<g transform="translate(588, 35)" class="key none keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(588, 35)" class="key keypos-7">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Gui+U</text>
 </g>
 <g transform="translate(644, 28)" class="key none keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1761,7 +1763,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(84, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+A</text>
+<text x="0" y="0" class="key tap">Gui+A</text>
 </g>
 <g transform="translate(140, 91)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1805,19 +1807,19 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Z</text>
+<text x="0" y="0" class="key tap">UNDO</text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+X</text>
+<text x="0" y="0" class="key tap">CUT</text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+C</text>
+<text x="0" y="0" class="key tap">COPY</text>
 </g>
 <g transform="translate(252, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+V</text>
+<text x="0" y="0" class="key tap">PASTE</text>
 </g>
 <g transform="translate(308, 154)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
