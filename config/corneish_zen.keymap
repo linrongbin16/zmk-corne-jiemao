@@ -258,7 +258,7 @@
 
         Sym-Mac {
             label = "Sym-Mac";
-            display-name = "SYMBOL";
+            display-name = "Sym-Mac";
             bindings = <
 &none  &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
 &none  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &kp RIGHT_SHIFT              &kp RIGHT_CONTROL               &kp RIGHT_GUI                   &none  &none
@@ -269,7 +269,7 @@
 
         Nav-Mac {
             label = "Nav-Mac";
-            display-name = "Fn";
+            display-name = "Nav-Mac";
             bindings = <
 &none  &none      &kp HOME        &kp UP_ARROW    &kp LG(R)        &kp END          &kp LG(Y)  &kp LG(U)        &none              &none          &none  &none
 &none  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
