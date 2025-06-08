@@ -297,9 +297,9 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '''', h: Media-Mac, s: '"'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
-  - {t: ESC, h: Fn}
+  - {t: ESC, h: Nav-Mac}
   - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
-  - {t: '$$mdi:backspace-outline$$', h: SYMBOL}
+  - {t: '$$mdi:backspace-outline$$', h: Sym-Mac}
   - {t: \, h: '|', s: '|'}
   Num-Mac:
   - {type: none}
@@ -344,7 +344,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  SYMBOL:
+  Sym-Mac:
   - {type: none}
   - {type: none}
   - '&'
@@ -387,7 +387,7 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
-  Fn:
+  Nav-Mac:
   - {type: none}
   - {type: none}
   - HOME
