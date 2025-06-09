@@ -37,7 +37,7 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: '''', h: Media-Win, s: '"'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
   - {t: ESC, h: Nav-Win}
   - {t: '$$mdi:keyboard-return$$', h: Num-Win}
@@ -175,10 +175,10 @@ layers:
   Fun-Win:
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
+  - OUT BLE
   - F10
   - F7
   - F8
@@ -190,7 +190,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - {type: none}
+  - OUT USB
   - F11
   - F4
   - F5
@@ -208,52 +208,9 @@ layers:
   - F2
   - F3
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - $$mdi:backspace-reverse$$
-  - {type: none}
-  Media-Win:
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - {type: none}
-  - OUT BLE
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:download-circle$$
-  - $$mdi:download-circle$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - OUT USB
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {t: Qwer-Mac, h: to}
-  - {type: held}
   - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
@@ -295,7 +252,7 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
-  - {t: '''', h: Media-Mac, s: '"'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
   - {t: ESC, h: Nav-Mac}
   - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
@@ -409,7 +366,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -423,7 +380,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {type: none}
   - {type: held}
@@ -433,10 +390,10 @@ layers:
   Fun-Mac:
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
+  - OUT BLE
   - F10
   - F7
   - F8
@@ -445,17 +402,17 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - {type: none}
+  - OUT USB
   - F11
   - F4
   - F5
   - F6
   - {type: none}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -466,52 +423,9 @@ layers:
   - F2
   - F3
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - $$mdi:backspace-reverse$$
-  - {type: none}
-  Media-Mac:
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - {type: none}
-  - OUT BLE
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:download-circle$$
-  - $$mdi:download-circle$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - OUT USB
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {t: Qwer-Win, h: to}
-  - {type: held}
   - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
