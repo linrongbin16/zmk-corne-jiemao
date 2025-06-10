@@ -203,10 +203,10 @@
         Nav-Win {
             display-name = "Fn";
             bindings = <
-&none   &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &kp LC(U)  &none            &none          &none  &none
-&trans  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none      &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
-&none   &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &none      &none      &none            &none          &none  &kp RIGHT_GUI
-                                   &none           &none            &none            &none      &none      &none
+&none   &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &kp LC(U)   &none            &none          &none  &none
+&trans  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none       &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
+&none   &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &none      &none       &none            &none          &none  &kp RIGHT_GUI
+                                   &none           &none            &none            &none      &kp DELETE  &none
             >;
 
             label = "Nav-Win";
@@ -260,10 +260,10 @@
             label = "Nav-Mac";
             display-name = "Nav-Mac";
             bindings = <
-&none   &none      &kp HOME        &kp UP_ARROW    &kp LG(R)        &kp END          &kp LG(Y)  &kp LG(U)  &none            &none          &none  &none
-&trans  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none      &kp RIGHT_SHIFT  &kp RIGHT_GUI  &none  &trans
-&none   &kp LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp PAGE_DOWN    &none      &none      &none            &none          &none  &kp RIGHT_ALT
-                                   &none           &none            &none            &none      &none      &none
+&none   &none      &kp HOME        &kp UP_ARROW    &kp LG(R)        &kp END          &kp LG(Y)  &kp LG(U)   &none            &none          &none  &none
+&trans  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none       &kp RIGHT_SHIFT  &kp RIGHT_GUI  &none  &trans
+&none   &kp LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp PAGE_DOWN    &none      &none       &none            &none          &none  &kp RIGHT_ALT
+                                   &none           &none            &none            &none      &kp DELETE  &none
             >;
         };
 
