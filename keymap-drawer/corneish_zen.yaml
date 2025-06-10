@@ -37,12 +37,12 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: '''', h: '"', s: '"'}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
   - {t: ESC, h: Nav-Win}
   - {t: '$$mdi:keyboard-return$$', h: Num-Win}
   - {t: '$$mdi:backspace-outline$$', h: Sym-Win}
-  - {t: \, h: '|', s: '|'}
+  - {t: '''', h: '"', s: '"'}
   Num-Win:
   - {type: none}
   - {type: none}
@@ -252,12 +252,12 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
-  - {t: '''', h: '"', s: '"'}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
   - {t: ESC, h: Nav-Mac}
   - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
   - {t: '$$mdi:backspace-outline$$', h: Sym-Mac}
-  - {t: \, h: '|', s: '|'}
+  - {t: '''', h: '"', s: '"'}
   Num-Mac:
   - {type: none}
   - {type: none}
