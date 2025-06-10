@@ -143,7 +143,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Qwer-Win {
+        Qwer {
             display-name = "Qwer-Win";
 
             // --------------------------------------------------------------------------------
@@ -158,11 +158,9 @@
 &kp CAPSLOCK      &kp Z  &kp X            &kp C               &kp V           &kp B           &kp N           &kp M               &as LESS_THAN COMMA             &as GREATER_THAN DOT  &as QUESTION SLASH  &kp RIGHT_GUI
                                           &as PIPE BACKSLASH  &tpmol 4 SPACE  &tpmor 3 ESC    &tpmor 1 ENTER  &tpmor 2 BACKSPACE  &as DOUBLE_QUOTES SINGLE_QUOTE
             >;
-
-            label = "Qwer-Win";
         };
 
-        Num-Win {
+        Num {
             display-name = "Num-Win";
 
             // -----------------------------------------------------------------------------------------
@@ -177,11 +175,9 @@
 &none   &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_GUI
                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
             >;
-
-            label = "Num-Win";
         };
 
-        Sym-Win {
+        Sym {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -196,11 +192,9 @@
 &none   &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_GUI
                                 &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
             >;
-
-            label = "Sym-Win";
         };
 
-        Nav-Win {
+        Nav {
             display-name = "Fn";
             bindings = <
 &none   &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &kp LC(U)   &none            &none          &none  &none
@@ -208,71 +202,13 @@
 &none   &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &none      &none       &none            &none          &none  &kp RIGHT_GUI
                                    &none           &none            &none            &none      &kp DELETE  &none
             >;
-
-            label = "Nav-Win";
         };
 
-        Fun-Win {
+        Fun {
             bindings = <
 &bootloader   &none  &bt BT_CLR    &bt BT_PRV      &bt BT_NXT  &out OUT_BLE    &kp F10  &kp F7      &kp F8  &kp F9  &none  &bootloader
 &trans        &none  &kp LEFT_ALT  &kp LEFT_SHIFT  &none       &out OUT_USB    &kp F11  &kp F4      &kp F5  &kp F6  &none  &trans
-&kp LEFT_GUI  &none  &none         &none           &none       &none           &kp F12  &kp F1      &kp F2  &kp F3  &none  &to 5
-                                   &none           &none       &none           &none    &kp DELETE  &none
-            >;
-
-            label = "Fun-Win";
-        };
-
-        Qwer-Mac {
-            label = "Qwer-Mac";
-            display-name = "Qwer-Mac";
-            bindings = <
-&kp TAB           &kp Q  &kp W            &kp E               &kp R           &kp T           &kp Y           &kp U               &kp I                           &kp O                 &kp P               &none
-&kp LEFT_CONTROL  &kp A  &hml LEFT_GUI S  &hmlf LEFT_SHIFT D  &kp F           &kp G           &kp H           &kp J               &hmrj RIGHT_SHIFT K             &hmr RIGHT_GUI L      &as COLON SEMI      &kp RIGHT_CONTROL
-&kp CAPSLOCK      &kp Z  &kp X            &kp C               &kp V           &kp B           &kp N           &kp M               &as LESS_THAN COMMA             &as GREATER_THAN DOT  &as QUESTION SLASH  &kp RIGHT_ALT
-                                          &as PIPE BACKSLASH  &tpmol 9 SPACE  &tpmor 8 ESC    &tpmor 6 ENTER  &tpmor 7 BACKSPACE  &as DOUBLE_QUOTES SINGLE_QUOTE
-            >;
-        };
-
-        Num-Mac {
-            label = "Num-Mac";
-            display-name = "Num-Mac";
-            bindings = <
-&none   &none  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &none                        &kp RIGHT_SHIFT                 &kp RIGHT_GUI                   &none  &trans
-&none   &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
-                             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
-            >;
-        };
-
-        Sym-Mac {
-            label = "Sym-Mac";
-            display-name = "Sym-Mac";
-            bindings = <
-&none   &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &none                        &kp RIGHT_SHIFT                 &kp RIGHT_GUI                   &none  &trans
-&none   &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
-                                &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
-            >;
-        };
-
-        Nav-Mac {
-            label = "Nav-Mac";
-            display-name = "Nav-Mac";
-            bindings = <
-&none   &none      &kp HOME        &kp UP_ARROW    &kp LG(R)        &kp END          &kp LG(Y)  &kp LG(U)   &none            &none          &none  &none
-&trans  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none       &kp RIGHT_SHIFT  &kp RIGHT_GUI  &none  &trans
-&none   &kp LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp PAGE_DOWN    &none      &none       &none            &none          &none  &kp RIGHT_ALT
-                                   &none           &none            &none            &none      &kp DELETE  &none
-            >;
-        };
-
-        Fun-Mac {
-            label = "Fun-Mac";
-            bindings = <
-&bootloader   &none  &bt BT_CLR    &bt BT_PRV      &bt BT_NXT  &out OUT_BLE    &kp F10  &kp F7      &kp F8  &kp F9  &none  &bootloader
-&trans        &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &none       &out OUT_USB    &kp F11  &kp F4      &kp F5  &kp F6  &none  &trans
-&kp LEFT_ALT  &none  &none         &none           &none       &none           &kp F12  &kp F1      &kp F2  &kp F3  &none  &to 0
+&kp LEFT_GUI  &none  &none         &none           &none       &none           &kp F12  &kp F1      &kp F2  &kp F3  &none  &none
                                    &none           &none       &none           &none    &kp DELETE  &none
             >;
         };
