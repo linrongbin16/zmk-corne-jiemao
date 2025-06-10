@@ -51,6 +51,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bluetooth-off</title><path d="M13,5.83L14.88,7.71L13.28,9.31L14.69,10.72L17.71,7.7L12,2H11V7.03L13,9.03M5.41,4L4,5.41L10.59,12L5,17.59L6.41,19L11,14.41V22H12L16.29,17.71L18.59,20L20,18.59M13,18.17V14.41L14.88,16.29" /></svg>
 
 </svg>
+<svg id="mdi:download-circle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>download-circle</title><path d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M8 17H16V15H8V17M16 10H13.5V6H10.5V10H8L12 14L16 10Z" /></svg>
+
+</svg>
 <svg id="mdi:keyboard-return">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>keyboard-return</title><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
 
@@ -885,8 +889,9 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 1323)" class="layer-Fun-Win">
 <text x="0" y="28" class="label" id="Fun-Win">Fun-Win:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key none keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(28, 49)" class="key keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:download-circle" xlink:href="#mdi:download-circle" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:download-circle"/>
 </g>
 <g transform="translate(84, 49)" class="key none keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -930,8 +935,9 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 49)" class="key none keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(812, 49)" class="key none keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(812, 49)" class="key keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:download-circle" xlink:href="#mdi:download-circle" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:download-circle"/>
 </g>
 <g transform="translate(28, 105)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1727,8 +1733,9 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 2976)" class="layer-Fun-Mac">
 <text x="0" y="28" class="label" id="Fun-Mac">Fun-Mac:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key none keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(28, 49)" class="key keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:download-circle" xlink:href="#mdi:download-circle" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:download-circle"/>
 </g>
 <g transform="translate(84, 49)" class="key none keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1772,8 +1779,9 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 49)" class="key none keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(812, 49)" class="key none keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(812, 49)" class="key keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:download-circle" xlink:href="#mdi:download-circle" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:download-circle"/>
 </g>
 <g transform="translate(28, 105)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

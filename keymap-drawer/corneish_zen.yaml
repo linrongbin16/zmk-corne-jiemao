@@ -173,7 +173,7 @@ layers:
   - $$mdi:backspace-reverse$$
   - {type: none}
   Fun-Win:
-  - {type: none}
+  - $$mdi:download-circle$$
   - {type: none}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
@@ -184,7 +184,7 @@ layers:
   - F8
   - F9
   - {type: none}
-  - {type: none}
+  - $$mdi:download-circle$$
   - {t: ▽, type: trans}
   - {type: none}
   - $$mdi:apple-keyboard-option$$
@@ -388,7 +388,7 @@ layers:
   - $$mdi:backspace-reverse$$
   - {type: none}
   Fun-Mac:
-  - {type: none}
+  - $$mdi:download-circle$$
   - {type: none}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
@@ -399,7 +399,7 @@ layers:
   - F8
   - F9
   - {type: none}
-  - {type: none}
+  - $$mdi:download-circle$$
   - {t: ▽, type: trans}
   - {type: none}
   - $$mdi:apple-keyboard-command$$
