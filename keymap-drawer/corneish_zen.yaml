@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
-  Qwer-Win:
+  Qwer:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -39,11 +39,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun}
-  - {t: ESC, h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Num-Win}
-  - {t: '$$mdi:backspace-outline$$', h: SYMBOL}
+  - {t: ESC, h: Nav}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   - {t: '''', h: '"', s: '"'}
-  Num-Win:
+  Num:
   - {type: none}
   - {type: none}
   - {t: '7', s: '&'}
@@ -86,7 +86,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  SYMBOL:
+  Sym:
   - {type: none}
   - {type: none}
   - '&'
@@ -129,7 +129,7 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
-  Fn:
+  Nav:
   - {type: none}
   - {type: none}
   - HOME
