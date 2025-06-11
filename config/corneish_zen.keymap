@@ -162,7 +162,7 @@
             label = "Qwer-Win";
         };
 
-        Num-Win {
+        Num {
             display-name = "Num-Win";
 
             // -----------------------------------------------------------------------------------------
@@ -178,10 +178,10 @@
                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
             >;
 
-            label = "Num-Win";
+            label = "Num";
         };
 
-        Sym-Win {
+        Sym {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -197,7 +197,7 @@
                                 &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
             >;
 
-            label = "Sym-Win";
+            label = "Sym";
         };
 
         Nav-Win {
