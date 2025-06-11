@@ -38,97 +38,11 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: \, h: '|', s: '|'}
-  - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
+  - {t: '$$mdi:keyboard-space$$', h: Fun}
   - {t: ESC, h: Nav-Win}
-  - {t: '$$mdi:keyboard-return$$', h: Num-Win}
-  - {t: '$$mdi:backspace-outline$$', h: Sym-Win}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   - {t: '''', h: '"', s: '"'}
-  Num-Win:
-  - {type: none}
-  - {type: none}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '-', s: _}
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '=', s: +}
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '`', s: '~'}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  Sym-Win:
-  - {type: none}
-  - {type: none}
-  - '&'
-  - '*'
-  - (
-  - )
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $
-  - '%'
-  - ^
-  - _
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - '!'
-  - '@'
-  - '#'
-  - +
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-command$$
-  - '{'
-  - '}'
-  - '~'
-  - {type: none}
-  - {type: held}
-  - {type: none}
   Nav-Win:
   - {type: none}
   - {type: none}
@@ -172,49 +86,6 @@ layers:
   - {type: none}
   - $$mdi:backspace-reverse$$
   - {type: none}
-  Fun-Win:
-  - $$mdi:download-circle$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - OUT BLE
-  - F10
-  - F7
-  - F8
-  - F9
-  - {type: none}
-  - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
-  - {type: none}
-  - OUT USB
-  - F11
-  - F4
-  - F5
-  - F6
-  - {type: none}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - F12
-  - F1
-  - F2
-  - F3
-  - {type: none}
-  - {t: Qwer-Mac, h: to}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - $$mdi:backspace-reverse$$
-  - {type: none}
   Qwer-Mac:
   - $$mdi:keyboard-tab$$
   - Q
@@ -230,14 +101,14 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-control$$
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - H
   - J
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: ':', s: ':'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-caps$$
@@ -251,14 +122,57 @@ layers:
   - {t: ',', h: <, s: <}
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: \, h: '|', s: '|'}
-  - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
+  - {t: '$$mdi:keyboard-space$$', h: Fun}
   - {t: ESC, h: Nav-Mac}
-  - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
-  - {t: '$$mdi:backspace-outline$$', h: Sym-Mac}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   - {t: '''', h: '"', s: '"'}
-  Num-Mac:
+  Nav-Mac:
+  - {type: none}
+  - {type: none}
+  - HOME
+  - $$mdi:arrow-up$$
+  - Alt+R
+  - END
+  - Alt+Y
+  - Alt+U
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - Alt+A
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - PgUp
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - Alt+Z
+  - Alt+X
+  - Alt+C
+  - Alt+V
+  - PgDn
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - $$mdi:backspace-reverse$$
+  - {type: none}
+  Num:
   - {type: none}
   - {type: none}
   - {t: '7', s: '&'}
@@ -280,7 +194,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -294,14 +208,14 @@ layers:
   - '>='
   - '!='
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
   - {type: held}
   - {type: none}
   - {type: none}
-  Sym-Mac:
+  Sym:
   - {type: none}
   - {type: none}
   - '&'
@@ -323,7 +237,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -337,57 +251,14 @@ layers:
   - '>='
   - '!='
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - '{'
   - '}'
   - '~'
   - {type: none}
   - {type: held}
   - {type: none}
-  Nav-Mac:
-  - {type: none}
-  - {type: none}
-  - HOME
-  - $$mdi:arrow-up$$
-  - REDO
-  - END
-  - Gui+Y
-  - Gui+U
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - Gui+A
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - PgUp
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - PgDn
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - $$mdi:backspace-reverse$$
-  - {type: none}
-  Fun-Mac:
+  Fun:
   - $$mdi:download-circle$$
   - {type: none}
   - $$mdi:bluetooth-off$$
@@ -402,7 +273,7 @@ layers:
   - $$mdi:download-circle$$
   - {t: ▽, type: trans}
   - {type: none}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
   - OUT USB
@@ -411,8 +282,8 @@ layers:
   - F5
   - F6
   - {type: none}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {t: Qwer-Mac, h: to}
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {type: none}
   - {type: none}
