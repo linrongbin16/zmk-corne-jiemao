@@ -244,37 +244,5 @@
 
             label = "Fun";
         };
-
-        Num-Mac {
-            label = "Num-Mac";
-            display-name = "Num-Mac";
-            bindings = <
-&none   &none  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &none                        &kp RIGHT_SHIFT                 &kp RIGHT_GUI                   &none  &trans
-&none   &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
-                             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
-            >;
-        };
-
-        Sym-Mac {
-            label = "Sym-Mac";
-            display-name = "Sym-Mac";
-            bindings = <
-&none   &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &none                        &kp RIGHT_SHIFT                 &kp RIGHT_GUI                   &none  &trans
-&none   &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &kp RIGHT_ALT
-                                &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
-            >;
-        };
-
-        Fun-Mac {
-            label = "Fun-Mac";
-            bindings = <
-&bootloader   &none  &bt BT_CLR    &bt BT_PRV      &bt BT_NXT  &out OUT_BLE    &kp F10  &kp F7      &kp F8  &kp F9  &none  &bootloader
-&trans        &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &none       &out OUT_USB    &kp F11  &kp F4      &kp F5  &kp F6  &none  &trans
-&kp LEFT_ALT  &none  &none         &none           &none       &none           &kp F12  &kp F1      &kp F2  &kp F3  &none  &to 0
-                                   &none           &none       &none           &none    &kp DELETE  &none
-            >;
-        };
     };
 };
