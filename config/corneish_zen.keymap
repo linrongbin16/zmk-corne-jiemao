@@ -182,7 +182,7 @@
         };
 
         Sym-Win {
-            display-name = "SYMBOL";
+            display-name = "Sym-Win";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -201,7 +201,7 @@
         };
 
         Nav-Win {
-            display-name = "Fn";
+            display-name = "Nav-Win";
             bindings = <
 &none   &none      &kp HOME        &kp UP_ARROW    &kp LC(R)        &kp END          &kp LC(Y)  &kp LC(U)   &none            &none          &none  &none
 &trans  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP      &none      &none       &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
