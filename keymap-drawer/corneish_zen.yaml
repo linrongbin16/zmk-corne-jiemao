@@ -40,95 +40,9 @@ layers:
   - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
   - {t: ESC, h: Nav-Win}
-  - {t: '$$mdi:keyboard-return$$', h: Num-Win}
-  - {t: '$$mdi:backspace-outline$$', h: Sym-Win}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   - {t: '''', h: '"', s: '"'}
-  Num-Win:
-  - {type: none}
-  - {type: none}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '-', s: _}
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '=', s: +}
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '`', s: '~'}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  Sym-Win:
-  - {type: none}
-  - {type: none}
-  - '&'
-  - '*'
-  - (
-  - )
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $
-  - '%'
-  - ^
-  - _
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - '!'
-  - '@'
-  - '#'
-  - +
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-command$$
-  - '{'
-  - '}'
-  - '~'
-  - {type: none}
-  - {type: held}
-  - {type: none}
   Nav-Win:
   - {type: none}
   - {type: none}
@@ -255,95 +169,9 @@ layers:
   - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Mac}
   - {t: ESC, h: Nav-Mac}
-  - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
-  - {t: '$$mdi:backspace-outline$$', h: Sym-Mac}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   - {t: '''', h: '"', s: '"'}
-  Num-Mac:
-  - {type: none}
-  - {type: none}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '-', s: _}
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '=', s: +}
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '`', s: '~'}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  Sym-Mac:
-  - {type: none}
-  - {type: none}
-  - '&'
-  - '*'
-  - (
-  - )
-  - {type: none}
-  - <-
-  - ->
-  - =>
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $
-  - '%'
-  - ^
-  - _
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
-  - '!'
-  - '@'
-  - '#'
-  - +
-  - {type: none}
-  - <=
-  - '>='
-  - '!='
-  - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  - '{'
-  - '}'
-  - '~'
-  - {type: none}
-  - {type: held}
-  - {type: none}
   Nav-Mac:
   - {type: none}
   - {type: none}
@@ -429,4 +257,90 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
+  - {type: none}
+  Num:
+  - {type: none}
+  - {type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {type: none}
+  - <=
+  - '>='
+  - '!='
+  - {type: none}
+  - {type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '`', s: '~'}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  Sym:
+  - {type: none}
+  - {type: none}
+  - '&'
+  - '*'
+  - (
+  - )
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - $
+  - '%'
+  - ^
+  - _
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  - '!'
+  - '@'
+  - '#'
+  - +
+  - {type: none}
+  - <=
+  - '>='
+  - '!='
+  - {type: none}
+  - {type: none}
+  - '{'
+  - '}'
+  - '~'
+  - {type: none}
+  - {type: held}
   - {type: none}
