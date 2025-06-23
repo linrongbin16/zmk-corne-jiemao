@@ -37,12 +37,12 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
-  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: Fun-Win}
   - {t: ESC, h: Nav-Win}
+  - {t: \, h: '|', s: '|'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
-  - {t: '''', h: '"', s: '"'}
   Nav-Win:
   - {type: none}
   - Ctl+Q
@@ -81,11 +81,11 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - {type: none}
-  - {type: none}
   - {type: held}
+  - {type: none}
+  - {type: none}
   - HOME
   - END
-  - {type: none}
   Fun-Win:
   - $$mdi:download-circle$$
   - {type: none}
@@ -123,12 +123,12 @@ layers:
   - F3
   - {type: none}
   - {t: Qwer-Mac, h: to}
-  - {type: none}
   - {type: held}
   - {type: none}
   - {type: none}
-  - $$mdi:backspace-reverse$$
   - {type: none}
+  - {type: none}
+  - $$mdi:backspace-reverse$$
   Qwer-Mac:
   - $$mdi:keyboard-tab$$
   - Q
@@ -298,8 +298,8 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
+  - {type: none}
   - {type: held}
-  - {type: held alternate}
   - {type: none}
   Sym:
   - {type: none}
@@ -342,5 +342,5 @@ layers:
   - '}'
   - '~'
   - {type: none}
+  - {type: none}
   - {type: held}
-  - {type: held alternate}
