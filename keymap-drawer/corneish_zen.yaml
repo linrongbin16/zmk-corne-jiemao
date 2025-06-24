@@ -88,10 +88,10 @@ layers:
   - END
   Fun-Win:
   - $$mdi:download-circle$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   - OUT BLE
   - F10
   - F7
@@ -104,7 +104,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - OUT USB
+  - $$mdi:bluetooth-off$$
   - F11
   - F4
   - F5
@@ -113,10 +113,10 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
   - {type: none}
+  - OUT BLE
+  - OUT USB
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - BT CLR ALL
   - F12
   - F1
   - F2
@@ -217,11 +217,11 @@ layers:
   - END
   Fun-Mac:
   - $$mdi:download-circle$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - OUT BLE
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - F10
   - F7
   - F8
@@ -233,7 +233,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
-  - OUT USB
+  - $$mdi:bluetooth-off$$
   - F11
   - F4
   - F5
@@ -242,10 +242,10 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   - {type: none}
+  - OUT BLE
+  - OUT USB
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - BT CLR ALL
   - F12
   - F1
   - F2
