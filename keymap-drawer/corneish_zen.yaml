@@ -221,7 +221,7 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '2'}
   - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - OUT BLE
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - F10
   - F7
   - F8
