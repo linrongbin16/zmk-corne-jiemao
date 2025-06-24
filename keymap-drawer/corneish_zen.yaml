@@ -1,134 +1,5 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
-  Qwer-Win:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {type: none}
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - F
-  - G
-  - H
-  - J
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: ':', s: ':'}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-caps$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
-  - {t: /, h: '?', s: '?'}
-  - $$mdi:apple-keyboard-command$$
-  - {t: ESC, h: Fun-Win}
-  - {t: '$$mdi:keyboard-space$$', h: Nav-Win}
-  - {t: \, h: '|', s: '|'}
-  - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
-  - {t: '$$mdi:backspace-outline$$', h: Sym}
-  Nav-Win:
-  - {type: none}
-  - Ctl+Q
-  - Ctl+W
-  - $$mdi:arrow-up$$
-  - Ctl+R
-  - Ctl+T
-  - Ctl+Y
-  - Ctl+U
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - Ctl+A
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - Ctl+F
-  - Ctl+H
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+B
-  - Ctl+N
-  - Ctl+M
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - HOME
-  - END
-  Fun-Win:
-  - $$mdi:download-circle$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - OUT BLE
-  - F10
-  - F7
-  - F8
-  - F9
-  - {type: none}
-  - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
-  - F11
-  - F4
-  - F5
-  - F6
-  - {type: none}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {type: none}
-  - OUT BLE
-  - OUT USB
-  - {type: none}
-  - BT CLR ALL
-  - F12
-  - F1
-  - F2
-  - F3
-  - {type: none}
-  - {t: Qwer-Mac, h: to}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:backspace-reverse$$
   Qwer-Mac:
   - $$mdi:keyboard-tab$$
   - Q
@@ -252,6 +123,135 @@ layers:
   - F3
   - {type: none}
   - {t: Qwer-Win, h: to}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:backspace-reverse$$
+  Qwer-Win:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {type: none}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - F
+  - G
+  - H
+  - J
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: ':', s: ':'}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-caps$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>', s: '>'}
+  - {t: /, h: '?', s: '?'}
+  - $$mdi:apple-keyboard-command$$
+  - {t: ESC, h: Fun-Win}
+  - {t: '$$mdi:keyboard-space$$', h: Nav-Win}
+  - {t: \, h: '|', s: '|'}
+  - {t: '''', h: '"', s: '"'}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
+  Nav-Win:
+  - {type: none}
+  - Ctl+Q
+  - Ctl+W
+  - $$mdi:arrow-up$$
+  - Ctl+R
+  - Ctl+T
+  - Ctl+Y
+  - Ctl+U
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - Ctl+A
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - Ctl+F
+  - Ctl+H
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - Ctl+N
+  - Ctl+M
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - HOME
+  - END
+  Fun-Win:
+  - $$mdi:download-circle$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - OUT BLE
+  - F10
+  - F7
+  - F8
+  - F9
+  - {type: none}
+  - $$mdi:download-circle$$
+  - {t: ▽, type: trans}
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: none}
+  - $$mdi:bluetooth-off$$
+  - F11
+  - F4
+  - F5
+  - F6
+  - {type: none}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - OUT BLE
+  - OUT USB
+  - {type: none}
+  - BT CLR ALL
+  - F12
+  - F1
+  - F2
+  - F3
+  - {type: none}
+  - {t: Qwer-Mac, h: to}
   - {type: held}
   - {type: none}
   - {type: none}
