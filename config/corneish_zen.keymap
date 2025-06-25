@@ -123,10 +123,10 @@
             label = "Nav-Mac";
             display-name = "Nav-Mac";
             bindings = <
-&none   &kp LG(Q)  &kp LG(W)       &kp UP_ARROW    &kp LG(R)        &kp LG(T)    &kp LG(Y)  &kp LG(U)  &none            &none          &none  &none
-&trans  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(F)    &kp LG(H)  &none      &kp RIGHT_SHIFT  &kp RIGHT_GUI  &none  &trans
-&none   &kp LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp LG(B)    &kp LG(N)  &kp LG(M)  &none            &none          &none  &kp RIGHT_ALT
-                                   &none           &none            &none        &none      &kp HOME   &kp END
+&none   &kp LG(Q)  &kp LG(W)       &kp UP_ARROW    &kp LG(R)        &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp PAGE_UP    &none    &none  &none
+&trans  &kp LG(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(F)    &kp LG(H)  &kp HOME   &kp PAGE_DOWN  &kp END  &none  &trans
+&none   &kp LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp LG(B)    &kp LG(N)  &kp LG(M)  &none          &none    &none  &kp RIGHT_ALT
+                                   &none           &none            &none        &none      &none      &none
             >;
         };
 
@@ -162,10 +162,10 @@
         Nav-Win {
             display-name = "Nav-Win";
             bindings = <
-&none   &kp LC(Q)  &kp LC(W)       &kp UP_ARROW    &kp LC(R)        &kp LC(T)    &kp LC(Y)  &kp LC(U)  &none            &none          &none  &none
-&trans  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)    &kp LC(H)  &none      &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
-&none   &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(B)    &kp LC(N)  &kp LC(M)  &none            &none          &none  &kp RIGHT_GUI
-                                   &none           &none            &none        &none      &kp HOME   &kp END
+&none   &kp LC(Q)  &kp LC(W)       &kp UP_ARROW    &kp LC(R)        &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp PAGE_UP    &none    &none  &none
+&trans  &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)    &kp LC(H)  &kp HOME   &kp PAGE_DOWN  &kp END  &none  &trans
+&none   &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(B)    &kp LC(N)  &kp LC(M)  &none          &none    &none  &kp RIGHT_GUI
+                                   &none           &none            &none        &none      &none      &none
             >;
 
             label = "Nav-Win";
