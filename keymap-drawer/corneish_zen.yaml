@@ -85,7 +85,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   Fun-Mac:
   - $$mdi:download-circle$$
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -214,7 +214,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - $$mdi:backspace-reverse$$
   Fun-Win:
   - $$mdi:download-circle$$
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
