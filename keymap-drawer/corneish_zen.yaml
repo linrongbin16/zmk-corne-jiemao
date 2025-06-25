@@ -52,7 +52,7 @@ layers:
   - Gui+T
   - Gui+Y
   - Gui+U
-  - {type: none}
+  - PgUp
   - {type: none}
   - {type: none}
   - {type: none}
@@ -63,9 +63,9 @@ layers:
   - $$mdi:arrow-right$$
   - Gui+F
   - Gui+H
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
+  - HOME
+  - PgDn
+  - END
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -84,8 +84,8 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  - HOME
-  - END
+  - {type: none}
+  - {type: none}
   Fun-Mac:
   - $$mdi:download-circle$$
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -181,7 +181,7 @@ layers:
   - Ctl+T
   - Ctl+Y
   - Ctl+U
-  - {type: none}
+  - PgUp
   - {type: none}
   - {type: none}
   - {type: none}
@@ -192,9 +192,9 @@ layers:
   - $$mdi:arrow-right$$
   - Ctl+F
   - Ctl+H
-  - {type: none}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
+  - HOME
+  - PgDn
+  - END
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -213,8 +213,8 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  - HOME
-  - END
+  - {type: none}
+  - {type: none}
   Fun-Win:
   - $$mdi:download-circle$$
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
