@@ -333,6 +333,9 @@ parse_config:
     "&bt BT_NXT":
       tap: $$mdi:bluetooth-connect$$
       hold: $$mdi:arrow-right$$
+    "&bt BT_CLR_ALL":
+      tap: $$mdi:bluetooth-off$$
+      hold: "All"
     "&msc SCRL_UP":
       tap: $$mdi:mouse-move-up$$
     "&msc SCRL_DOWN":
