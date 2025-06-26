@@ -116,7 +116,7 @@ layers:
   - OUT BLE
   - OUT USB
   - {type: none}
-  - BT CLR ALL
+  - {t: '$$mdi:bluetooth-off$$', h: All}
   - F12
   - F1
   - F2
@@ -245,7 +245,7 @@ layers:
   - OUT BLE
   - OUT USB
   - {type: none}
-  - BT CLR ALL
+  - {t: '$$mdi:bluetooth-off$$', h: All}
   - F12
   - F1
   - F2
