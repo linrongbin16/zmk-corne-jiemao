@@ -193,8 +193,8 @@
 
             bindings = <
 &none   &none  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &none                        &none                           &none                           &none  &trans
-&none   &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &none
+&trans  &none  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCL EQUAL          &none  &trans
+&none   &none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &none                        &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &none
                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
             >;
 
@@ -212,8 +212,8 @@
 
             bindings = <
 &none   &none  &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &none
-&trans  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &none                        &none                           &none                           &none  &trans
-&none   &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCLAMATION EQUAL   &none  &none
+&trans  &none  &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCL EQUAL          &none  &trans
+&none   &none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none  &none                        &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &none
                                 &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none  &none                        &none
             >;
 
