@@ -159,18 +159,6 @@ parse_config:
     "&hml LEFT_SHIFT RIGHT_ARROW":
       tap: $$mdi:arrow-right$$
       hold: $$mdi:apple-keyboard-shift$$
-    "&less_equal_macro":
-      tap: "<="
-    "&greater_equal_macro":
-      tap: ">="
-    "&not_equal_macro":
-      tap: "!="
-    "&left_arrow_macro":
-      tap: "<-"
-    "&right_arrow_macro":
-      tap: "->"
-    "&bold_right_arrow_macro":
-      tap: "=>"
     "&tap2_macro LESS_THAN MINUS":
       tap: "<-"
     "&tap2_macro MINUS GREATER_THAN":
@@ -179,6 +167,8 @@ parse_config:
       tap: "<="
     "&tap2_macro GREATER_THAN EQUAL":
       tap: ">="
+    "&tap2_macro EQUAL GREATER_THAN":
+      tap: "=>"
     "&tap2_macro EXCL EQUAL":
       tap: "!="
     "&tap2_macro EXCLAMATION EQUAL":
