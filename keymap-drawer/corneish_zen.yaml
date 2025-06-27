@@ -48,7 +48,7 @@ layers:
   - Gui+Q
   - Gui+W
   - $$mdi:arrow-up$$
-  - REDO
+  - Gui+R
   - Gui+T
   - Gui+Y
   - Gui+U
@@ -69,10 +69,10 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
   - Gui+B
   - Gui+N
   - Gui+M
@@ -113,8 +113,8 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - OUT BLE
-  - OUT USB
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
   - {type: none}
   - {t: '$$mdi:bluetooth-off$$', h: All}
   - F12
@@ -242,8 +242,8 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
   - {type: none}
-  - OUT BLE
-  - OUT USB
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
   - {type: none}
   - {t: '$$mdi:bluetooth-off$$', h: All}
   - F12
@@ -268,7 +268,7 @@ layers:
   - {type: none}
   - <-
   - ->
-  - =>
+  - '&tap2_macro EQUAL GREATER_THAN'
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
@@ -280,7 +280,7 @@ layers:
   - {type: none}
   - <=
   - '>='
-  - '&tap2_macro EXCL EQUAL'
+  - '!='
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -291,8 +291,8 @@ layers:
   - {t: '=', s: +}
   - {type: none}
   - {type: none}
-  - '&tap2_macro PLUS EQUAL'
-  - '&tap2_macro MINUS EQUAL'
+  - +=
+  - -=
   - {type: none}
   - {type: none}
   - {t: '[', s: '{'}
@@ -311,7 +311,7 @@ layers:
   - {type: none}
   - <-
   - ->
-  - =>
+  - '&tap2_macro EQUAL GREATER_THAN'
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
@@ -323,7 +323,7 @@ layers:
   - {type: none}
   - <=
   - '>='
-  - '&tap2_macro EXCL EQUAL'
+  - '!='
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -334,8 +334,8 @@ layers:
   - +
   - {type: none}
   - {type: none}
-  - '&tap2_macro PLUS EQUAL'
-  - '&tap2_macro MINUS EQUAL'
+  - +=
+  - -=
   - {type: none}
   - {type: none}
   - '{'
