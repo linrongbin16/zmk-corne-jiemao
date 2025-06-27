@@ -30,7 +30,6 @@ draw_config:
     rect.held, rect.combo.held {
         fill: #ffc;
     }
-
   shrink_wide_legends: 6
   glyph_tap_size: 18
   glyph_hold_size: 15
@@ -120,12 +119,10 @@ draw_config:
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>mouse-scroll-wheel</title><path d="M11 1.07C7.05 1.56 4 4.92 4 9H11V7.73C10.4 7.39 10 6.74 10 6V4C10 3.26 10.4 2.61 11 2.27V1.07M13 9V7.73C13.6 7.39 14 6.74 14 6V4C14 3.26 13.6 2.61 13 2.27V1.07C16.94 1.56 20 4.92 20 9H13M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15M13 6V4C13 3.45 12.55 3 12 3C11.45 3 11 3.45 11 4V6C11 6.55 11.45 7 12 7C12.55 7 13 6.55 13 6Z" /></svg>
     mdi:apple-keyboard-caps: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>apple-keyboard-caps</title><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
-
 parse_config:
   mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$
   toggle_label: "to"
-
   raw_binding_map:
     # Home-row-mods
     "&hml LEFT_ALT A":
@@ -162,36 +159,6 @@ parse_config:
     "&hml LEFT_SHIFT RIGHT_ARROW":
       tap: $$mdi:arrow-right$$
       hold: $$mdi:apple-keyboard-shift$$
-
-    # Magic keys
-    # "&mshft LEFT_SHIFT 0":
-    #   tap: $$mdi:apple-keyboard-shift$$
-    #   shifted: $$mdi:apple-keyboard-caps$$
-    #   hold: "magic"
-    "&mshft":
-      tap: $$mdi:apple-keyboard-shift$$
-      hold: "magic"
-    "&numpad":
-      tap: $$mdi:gamepad$$
-      hold: "to"
-    "&monum":
-      tap: "Num"
-      hold: "magic"
-    "&mosym":
-      tap: "Sym"
-      hold: "magic"
-    "&mo1":
-      tap: "Num"
-      hold: "magic"
-    "&mo2":
-      tap: "Sym"
-      hold: "magic"
-    "&mo3":
-      tap: "Fun"
-      hold: "magic"
-    "&mo4":
-      tap: "Nav"
-      hold: "magic"
     "&less_equal_macro":
       tap: "<="
     "&greater_equal_macro":
@@ -212,11 +179,14 @@ parse_config:
       tap: "<="
     "&tap2_macro GREATER_THAN EQUAL":
       tap: ">="
+    "&tap2_macro EXCL EQUAL":
+      tap: "!="
     "&tap2_macro EXCLAMATION EQUAL":
       tap: "!="
-    "&tap2_macro EQUAL GREATER_THAN":
-      tap: "=>"
-
+    "&tap2_macro PLUS EQUAL":
+      tap: "+="
+    "&tap2_macro MINUS EQUAL":
+      tap: "-="
     # Mouse
     "&mkp LCLK":
       tap: $$mdi:mouse-left-click$$
@@ -236,12 +206,10 @@ parse_config:
     "&mmv MOVE_RIGHT":
       tap: $$mdi:mouse$$
       hold: $$mdi:arrow-right$$
-
     # None
     "&none":
       tap: ""
       type: none
-
     # Numpad
     "&kp KP_PLUS":
       tap: "+"
@@ -295,18 +263,15 @@ parse_config:
       tap: 9
     "&kp KP_N9":
       tap: 9
-
     # Flash
     "&dongle_bootload_macro":
       tap: $$mdi:download-circle$$
-
     # Reset
     "&sys_reset":
       type: bootloader
       tap: $$mdi:backup-restore$$
     "&bootloader":
       tap: $$mdi:download-circle$$
-
     # Bluetooth
     "&bt BT_SEL 0":
       tap: $$mdi:bluetooth-connect$$
@@ -327,6 +292,12 @@ parse_config:
       shifted: $$mdi:usb$$
       tap: $$mdi:toggle-switch$$
       hold: $$mdi:bluetooth$$
+    "&out OUT_BLE":
+      shifted: $$mdi:bluetooth$$
+      tap: $$mdi:toggle-switch$$
+    "&out OUT_USB":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
     "&bt BT_PRV":
       tap: $$mdi:bluetooth-connect$$
       hold: $$mdi:arrow-left$$
@@ -340,19 +311,6 @@ parse_config:
       tap: $$mdi:mouse-move-up$$
     "&msc SCRL_DOWN":
       tap: $$mdi:mouse-move-down$$
-
-    # System
-    "&kp LG(Z)":
-      tap: UNDO
-    "&kp LG(R)":
-      tap: REDO
-    "&kp LG(C)":
-      tap: COPY
-    "&kp LG(X)":
-      tap: CUT
-    "&kp LG(V)":
-      tap: PASTE
-
   # ZMK
   zmk_keycode_map:
     # Defaults
@@ -456,7 +414,6 @@ parse_config:
     NON_US_HASH: "#"
     NUHS: "#"
     TILDE2: "~"
-
     # Numbers
     N1:
       tap: 1
@@ -518,11 +475,9 @@ parse_config:
     NUMBER_0:
       tap: 0
       shifted: ")"
-
     # Navigations
     PAGE_UP: PgUp
     PAGE_DOWN: PgDn
-
     # Shift
     LSHFT: $$mdi:apple-keyboard-shift$$
     LSHIFT: $$mdi:apple-keyboard-shift$$
@@ -530,18 +485,15 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
-
     # Control
     LCTRL: $$mdi:apple-keyboard-control$$
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
     RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
-
     LALT: $$mdi:apple-keyboard-option$$
     LEFT_ALT: $$mdi:apple-keyboard-option$$
     RALT: $$mdi:apple-keyboard-option$$
     RIGHT_ALT: $$mdi:apple-keyboard-option$$
-
     # Command
     LCMD: $$mdi:apple-keyboard-command$$
     LG: $$mdi:apple-keyboard-command$$
@@ -551,11 +503,9 @@ parse_config:
     RG: $$mdi:apple-keyboard-command$$
     RIGHT_GUI: $$mdi:apple-keyboard-command$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
-
     # Capslock
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
-
     # Enter
     ENTER:
       type: enter
@@ -566,13 +516,10 @@ parse_config:
     RETURN:
       type: enter
       tap: $$mdi:keyboard-return$$
-
     # Tab
     TAB: $$mdi:keyboard-tab$$
-
     # Space
     SPACE: $$mdi:keyboard-space$$
-
     # Backspace
     BACKSPACE:
       type: backspace
@@ -582,7 +529,6 @@ parse_config:
       tap: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse$$
     DEL: $$mdi:backspace-reverse$$
-
     # Arrow
     UP: $$mdi:arrow-up$$
     UP_ARROW: $$mdi:arrow-up$$
@@ -592,25 +538,21 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
     RIGHT_ARROW: $$mdi:arrow-right$$
-
     # Sound
     C_MUTE: $$mdi:volume-mute$$
     C_VOL_UP: $$mdi:volume-plus$$
     C_VOL_DN: $$mdi:volume-minus$$
     C_VOLUME_UP: $$mdi:volume-plus$$
     C_VOLUME_DOWN: $$mdi:volume-minus$$
-
     # Media
     C_NEXT: $$mdi:skip-forward$$
     C_PREV: $$mdi:skip-backward$$
     C_PREVIOUS: $$mdi:skip-backward$$
     C_PP: $$mdi:play-pause$$
     C_PLAY_PAUSE: $$mdi:play-pause$$
-
     # Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
-
     # Brightness
     C_BRI_UP: $$mdi:brightness-5$$
     C_BRIGHTNESS_INC: $$mdi:brightness-5$$
@@ -618,13 +560,11 @@ parse_config:
     C_BRI_DN: $$mdi:brightness-4$$
     C_BRI_DEC: $$mdi:brightness-4$$
     C_BRIGHTNESS_DEC: $$mdi:brightness-4$$
-
     # System
     C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL: $$mdi:close-box$$
     K_FIND: $$mdi:apple-finder$$
-
   zmk_combos:
     minus:
       key:
