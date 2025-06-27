@@ -278,9 +278,9 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <=
+  - '>='
+  - '&tap2_macro EXCL EQUAL'
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -290,9 +290,9 @@ layers:
   - {t: '3', s: '#'}
   - {t: '=', s: +}
   - {type: none}
-  - <=
-  - '>='
-  - '!='
+  - {type: none}
+  - '&tap2_macro PLUS EQUAL'
+  - '&tap2_macro MINUS EQUAL'
   - {type: none}
   - {type: none}
   - {t: '[', s: '{'}
@@ -321,9 +321,9 @@ layers:
   - ^
   - _
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - <=
+  - '>='
+  - '&tap2_macro EXCL EQUAL'
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
@@ -333,9 +333,9 @@ layers:
   - '#'
   - +
   - {type: none}
-  - <=
-  - '>='
-  - '!='
+  - {type: none}
+  - '&tap2_macro PLUS EQUAL'
+  - '&tap2_macro MINUS EQUAL'
   - {type: none}
   - {type: none}
   - '{'
