@@ -88,11 +88,11 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Mac:
   - $$mdi:download-circle$$
+  - {t: '$$mdi:bluetooth-off$$', h: All}
+  - $$mdi:bluetooth-off$$
+  - {type: none}
+  - {t: BT DISC, h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - F10
   - F7
   - F8
@@ -103,8 +103,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
+  - {t: BT DISC, h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
   - F11
   - F4
   - F5
@@ -115,8 +115,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
-  - {type: none}
-  - {t: '$$mdi:bluetooth-off$$', h: All}
+  - {t: BT DISC, h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - F12
   - F1
   - F2
@@ -217,11 +217,11 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Win:
   - $$mdi:download-circle$$
+  - {t: '$$mdi:bluetooth-off$$', h: All}
+  - $$mdi:bluetooth-off$$
+  - {type: none}
+  - {t: BT DISC, h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - F10
   - F7
   - F8
@@ -232,8 +232,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
-  - {type: none}
-  - $$mdi:bluetooth-off$$
+  - {t: BT DISC, h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
   - F11
   - F4
   - F5
@@ -244,8 +244,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
-  - {type: none}
-  - {t: '$$mdi:bluetooth-off$$', h: All}
+  - {t: BT DISC, h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - F12
   - F1
   - F2
