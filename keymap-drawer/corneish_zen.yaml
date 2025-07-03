@@ -88,9 +88,9 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Mac:
   - $$mdi:download-circle$$
+  - {type: none}
   - {t: '$$mdi:toggle-switch-off-outline$$', h: All, s: '$$mdi:bluetooth-off$$'}
   - {t: '$$mdi:toggle-switch-off-outline$$', s: '$$mdi:bluetooth-off$$'}
-  - {type: none}
   - {t: '$$mdi:bluetooth-off$$', h: '1'}
   - {t: '$$mdi:bluetooth$$', h: '1'}
   - F10
@@ -217,9 +217,9 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Win:
   - $$mdi:download-circle$$
+  - {type: none}
   - {t: '$$mdi:toggle-switch-off-outline$$', h: All, s: '$$mdi:bluetooth-off$$'}
   - {t: '$$mdi:toggle-switch-off-outline$$', s: '$$mdi:bluetooth-off$$'}
-  - {type: none}
   - {t: '$$mdi:bluetooth-off$$', h: '1'}
   - {t: '$$mdi:bluetooth$$', h: '1'}
   - F10
