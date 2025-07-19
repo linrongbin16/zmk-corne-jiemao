@@ -38,8 +38,8 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: ESC, h: Fun-Mac}
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: \, h: Edit-Mac, s: '|'}
+  - {t: '$$mdi:keyboard-space$$', h: Edit-Mac}
+  - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
@@ -81,8 +81,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - {type: none}
   - {type: held}
+  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
@@ -167,8 +167,8 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun-Win}
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: \, h: Edit-Win, s: '|'}
+  - {t: '$$mdi:keyboard-space$$', h: Edit-Win}
+  - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
@@ -210,8 +210,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - {type: none}
-  - {type: none}
   - {type: held}
+  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
@@ -296,8 +296,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - {type: held}
   - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
