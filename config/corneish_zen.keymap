@@ -183,7 +183,7 @@
 
         Nav {
             label = "Nav";
-            display-name = "Nav-Mac";
+            display-name = "Nav";
             bindings = <
 &none   &none  &none           &kp UP_ARROW    &none            &none    &none  &none     &kp PAGE_UP    &none    &none  &none
 &trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &trans
