@@ -121,7 +121,7 @@
 
         Edit-Mac {
             label = "Edit-Mac";
-            display-name = "Nav-Mac";
+            display-name = "Edit-Mac";
             bindings = <
 &none   &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)   &none  &none  &none
 &trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)   &none  &none  &trans
@@ -160,15 +160,14 @@
         };
 
         Edit-Win {
-            display-name = "Nav-Win";
+            label = "Edit-Win";
+            display-name = "Edit-Win";
             bindings = <
 &none   &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp LC(I)   &none  &none  &none
 &trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)  &kp LC(J)  &kp LC(K)   &none  &none  &trans
 &none   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)  &none       &none  &none  &kp RIGHT_GUI
                               &none      &none      &none        &none      &none      &kp DELETE
             >;
-
-            label = "Edit-Win";
         };
 
         Fun-Win {
