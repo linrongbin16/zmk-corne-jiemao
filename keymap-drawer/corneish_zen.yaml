@@ -39,49 +39,49 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: ESC, h: Fun-Mac}
   - {t: '$$mdi:keyboard-space$$', h: Nav-Mac}
-  - {t: \, h: Nav-Mac, s: '|'}
+  - {t: \, h: Edit-Mac, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
-  Nav-Mac:
+  Edit-Mac:
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - $$mdi:arrow-up$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - PgUp
+  - Gui+Q
+  - Gui+W
+  - Gui+E
+  - Gui+R
+  - Gui+T
+  - Gui+Y
+  - Gui+U
+  - Gui+I
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
+  - Gui+A
+  - Gui+S
+  - Gui+D
+  - Gui+F
+  - Gui+G
+  - Gui+H
+  - Gui+J
+  - Gui+K
   - {type: none}
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - {type: none}
-  - {type: none}
-  - HOME
-  - PgDn
-  - END
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+B
+  - Gui+N
+  - Gui+M
   - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - {type: held}
+  - {type: none}
   - {type: held}
   - {type: none}
   - {type: none}
@@ -254,6 +254,49 @@ layers:
   - {t: Qwer-Mac, h: to}
   - {type: held}
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:backspace-reverse$$
+  Nav-Mac:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:arrow-up$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - PgUp
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {type: none}
+  - {type: none}
+  - HOME
+  - PgDn
+  - END
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
