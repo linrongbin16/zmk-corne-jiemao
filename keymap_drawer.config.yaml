@@ -313,7 +313,7 @@ parse_config:
       hold: $$mdi:arrow-right$$
     "&bt BT_CLR_ALL":
       shifted: $$mdi:bluetooth-off$$
-      tap: $$mdi:toggle-switch-off-outline$$
+      tap: "Clear"
       hold: "All"
     "&msc SCRL_UP":
       tap: $$mdi:mouse-move-up$$
@@ -561,7 +561,7 @@ parse_config:
     # Bluetooth
     BT_CLR:
       shifted: $$mdi:bluetooth-off$$
-      tap: $$mdi:toggle-switch-off-outline$$
+      tap: "Clear"
     BT_SEL: $$mdi:bluetooth$$
     # Brightness
     C_BRI_UP: $$mdi:brightness-5$$
