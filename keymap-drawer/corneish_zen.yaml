@@ -38,7 +38,7 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: ESC, h: Fun-Mac}
-  - {t: '$$mdi:keyboard-space$$', h: Nav-Mac}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: \, h: Edit-Mac, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
@@ -167,7 +167,7 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun-Win}
-  - {t: '$$mdi:keyboard-space$$', h: Nav-Mac}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: \, h: Edit-Win, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
@@ -258,7 +258,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:backspace-reverse$$
-  Nav-Mac:
+  Nav:
   - {type: none}
   - {type: none}
   - {type: none}

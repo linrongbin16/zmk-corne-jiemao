@@ -387,8 +387,8 @@ rect.held, rect.combo.held {
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#Nav-Mac">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Nav-Mac</tspan></text>
+<a href="#Nav">
+<text x="0" y="24" class="key hold layer-activator">Nav</text>
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -918,8 +918,8 @@ rect.held, rect.combo.held {
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#Nav-Mac">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Nav-Mac</tspan></text>
+<a href="#Nav">
+<text x="0" y="24" class="key hold layer-activator">Nav</text>
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -1282,8 +1282,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1984)" class="layer-Nav-Mac">
-<text x="0" y="28" class="label" id="Nav-Mac">Nav-Mac:</text>
+<g transform="translate(40, 1984)" class="layer-Nav">
+<text x="0" y="28" class="label" id="Nav">Nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
