@@ -88,11 +88,11 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Mac:
   - $$mdi:download-circle$$
-  - {type: none}
-  - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
-  - {t: Clear, s: '$$mdi:bluetooth-off$$'}
-  - {t: '$$mdi:bluetooth-off$$', h: '1'}
   - {t: '$$mdi:bluetooth$$', h: '1'}
+  - {t: '$$mdi:bluetooth$$', h: '2'}
+  - {t: '$$mdi:bluetooth$$', h: '3'}
+  - {t: '$$mdi:bluetooth$$', h: '4'}
+  - {t: '$$mdi:bluetooth$$', h: '5'}
   - F10
   - F7
   - F8
@@ -103,8 +103,8 @@ layers:
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:bluetooth-off$$', h: '2'}
-  - {t: '$$mdi:bluetooth$$', h: '2'}
+  - {type: none}
+  - {type: none}
   - F11
   - F4
   - F5
@@ -112,11 +112,11 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
+  - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
+  - {t: Clear, s: '$$mdi:bluetooth-off$$'}
   - {type: none}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
-  - {t: '$$mdi:bluetooth-off$$', h: '3'}
-  - {t: '$$mdi:bluetooth$$', h: '3'}
   - F12
   - F1
   - F2
@@ -217,11 +217,11 @@ layers:
   - $$mdi:backspace-reverse$$
   Fun-Win:
   - $$mdi:download-circle$$
-  - {type: none}
-  - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
-  - {t: Clear, s: '$$mdi:bluetooth-off$$'}
-  - {t: '$$mdi:bluetooth-off$$', h: '1'}
   - {t: '$$mdi:bluetooth$$', h: '1'}
+  - {t: '$$mdi:bluetooth$$', h: '2'}
+  - {t: '$$mdi:bluetooth$$', h: '3'}
+  - {t: '$$mdi:bluetooth$$', h: '4'}
+  - {t: '$$mdi:bluetooth$$', h: '5'}
   - F10
   - F7
   - F8
@@ -241,11 +241,11 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
+  - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
+  - {t: Clear, s: '$$mdi:bluetooth-off$$'}
   - {type: none}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
-  - {t: '$$mdi:bluetooth-off$$', h: '3'}
-  - {t: '$$mdi:bluetooth$$', h: '3'}
   - F12
   - F1
   - F2
