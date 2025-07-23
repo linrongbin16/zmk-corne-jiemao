@@ -294,13 +294,13 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: held}
   - {type: none}
   - {type: none}
-  - $$mdi:backspace-reverse$$
+  - {type: none}
   Num:
   - {type: none}
   - {type: none}
