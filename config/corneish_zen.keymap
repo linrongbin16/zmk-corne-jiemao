@@ -202,10 +202,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none                           &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
-&trans  &as PIPE BACKSLASH              &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCL EQUAL          &none  &trans
-&trans  &as DOUBLE_QUOTES SINGLE_QUOTE  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &none                        &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &trans
-                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
+&trans  &none             &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none  &tap2_macro LESS_THAN MINUS  &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
+&trans  &kp BACKSLASH     &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &none  &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &tap2_macro EXCL EQUAL          &none  &trans
+&trans  &kp SINGLE_QUOTE  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none  &none                        &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &trans
+                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none  &none                        &none
             >;
 
             label = "Num";
