@@ -219,9 +219,8 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 0)" class="layer-Qwer-Mac">
 <text x="0" y="28" class="label" id="Qwer-Mac">Qwer-Mac:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<g transform="translate(28, 49)" class="key none keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -388,16 +387,15 @@ rect.held, rect.combo.held {
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">\</text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 <a href="#Nav">
 <text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted">|</text>
-</g>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">&#x27;</text>
-<text x="0" y="38" class="key hold">&quot;</text>
-<text x="0" y="-38" class="key shifted">&quot;</text>
+<text x="0" y="0" class="key tap">\</text>
+<text x="0" y="38" class="key hold">|</text>
+<text x="0" y="-38" class="key shifted">|</text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -749,9 +747,8 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 992)" class="layer-Qwer-Win">
 <text x="0" y="28" class="label" id="Qwer-Win">Qwer-Win:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<g transform="translate(28, 49)" class="key none keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -918,16 +915,15 @@ rect.held, rect.combo.held {
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">\</text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 <a href="#Nav">
 <text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted">|</text>
-</g>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">&#x27;</text>
-<text x="0" y="38" class="key hold">&quot;</text>
-<text x="0" y="-38" class="key shifted">&quot;</text>
+<text x="0" y="0" class="key tap">\</text>
+<text x="0" y="38" class="key hold">|</text>
+<text x="0" y="-38" class="key shifted">|</text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

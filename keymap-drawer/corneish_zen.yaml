@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
   Qwer-Mac:
-  - $$mdi:keyboard-tab$$
+  - {type: none}
   - Q
   - W
   - E
@@ -39,8 +39,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: ESC, h: Fun-Mac}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Mac}
-  - {t: \, h: Nav, s: '|'}
-  - {t: '''', h: '"', s: '"'}
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Edit-Mac:
@@ -130,7 +130,7 @@ layers:
   - {type: none}
   - $$mdi:backspace-reverse$$
   Qwer-Win:
-  - $$mdi:keyboard-tab$$
+  - {type: none}
   - Q
   - W
   - E
@@ -168,8 +168,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun-Win}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Win}
-  - {t: \, h: Nav, s: '|'}
-  - {t: '''', h: '"', s: '"'}
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Edit-Win:
