@@ -108,39 +108,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Qwer-Mac {
-            label = "Qwer-Mac";
-            display-name = "Qwer-Mac";
-            bindings = <
-&kp TAB       &kp Q            &kp W                &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
-&none         &hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_GUI SEMI  &none
-&kp LEFT_ALT  &kp Z            &kp X                &kp C              &kp V         &kp B               &kp N                           &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_ALT
-                                                    &mol 2 ESC         &mor 1 SPACE  &mor 6 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 7 RETURN  &mor 8 BACKSPACE
-            >;
-        };
-
-        Edit-Mac {
-            label = "Edit-Mac";
-            display-name = "Edit-Mac";
-            bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)   &none  &none  &trans
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)   &none  &none  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &none       &none  &none  &trans
-                              &none      &none      &none        &none      &none      &kp DELETE
-            >;
-        };
-
-        Fun-Mac {
-            label = "Fun-Mac";
-            bindings = <
-&bootloader  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp F10  &kp F7  &kp F8      &kp F9  &none  &bootloader
-&none        &kp LEFT_GUI    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none         &none           &kp F11  &kp F4  &kp F5      &kp F6  &none  &none
-&none        &bt BT_CLR_ALL  &bt BT_CLR        &none           &out OUT_BLE  &out OUT_USB    &kp F12  &kp F1  &kp F2      &kp F3  &none  &to 3
-                                               &none           &none         &none           &none    &none   &kp DELETE
-            >;
-        };
-
-        Qwer-Win {
+        Qwer {
             display-name = "Qwer-Win";
 
             // --------------------------------------------------------------------------------
@@ -150,35 +118,24 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q            &kp W                &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
-&none         &hml LEFT_ALT A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT SEMI  &none
-&kp LEFT_GUI  &kp Z            &kp X                &kp C              &kp V         &kp B               &kp N                           &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_GUI
-                                                    &mol 5 ESC         &mor 4 SPACE  &mor 6 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 7 RETURN  &mor 8 BACKSPACE
+&kp TAB       &kp Q  &kp W            &kp E              &kp R                &kp T                 &kp Y                           &kp U                 &kp I                &kp O                 &kp P               &kp CAPSLOCK
+&none         &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G                 &kp H                           &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K   &hmr RIGHT_ALT L      &as COLON SEMI      &none
+&kp LEFT_GUI  &kp Z  &kp X            &kp C              &kp V                &kp B                 &kp N                           &kp M                 &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH  &kp RIGHT_GUI
+                                      &mol 1 ESC         &mor 2 SPACE         &as PIPE BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 3 RETURN         &mor 4 BACKSPACE
             >;
 
-            label = "Qwer-Win";
+            label = "Qwer";
         };
 
-        Edit-Win {
-            label = "Edit-Win";
-            display-name = "Edit-Win";
+        Fun {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp LC(I)   &none  &none  &trans
-&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)  &kp LC(J)  &kp LC(K)   &none  &none  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)  &none       &none  &none  &trans
-                              &none      &none      &none        &none      &none      &kp DELETE
-            >;
-        };
-
-        Fun-Win {
-            bindings = <
-&bootloader  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4    &kp F10  &kp F7  &kp F8      &kp F9  &none  &bootloader
-&none        &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &bt BT_DISC 1  &bt BT_SEL 1    &kp F11  &kp F4  &kp F5      &kp F6  &none  &none
-&none        &bt BT_CLR_ALL  &bt BT_CLR        &none           &out OUT_BLE   &out OUT_USB    &kp F12  &kp F1  &kp F2      &kp F3  &none  &to 0
-                                               &none           &none          &none           &none    &none   &kp DELETE
+&bootloader  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &kp F10  &kp F7  &kp F8      &kp F9  &none  &bootloader
+&none        &none           &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none           &kp F11  &kp F4  &kp F5      &kp F6  &none  &none
+&none        &bt BT_CLR_ALL  &bt BT_CLR    &none           &out OUT_BLE      &out OUT_USB    &kp F12  &kp F1  &kp F2      &kp F3  &none  &none
+                                           &none           &none             &none           &none    &none   &kp DELETE
             >;
 
-            label = "Fun-Win";
+            label = "Fun";
         };
 
         Nav {
