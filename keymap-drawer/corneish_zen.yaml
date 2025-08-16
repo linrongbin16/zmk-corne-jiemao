@@ -315,7 +315,7 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: \, h: '|', s: '|'}
+  - {t: \, s: '|'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -327,7 +327,7 @@ layers:
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '''', h: '"', s: '"'}
+  - {t: '''', s: '"'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
