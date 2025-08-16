@@ -142,10 +142,10 @@
             label = "Nav";
             display-name = "Nav";
             bindings = <
-&trans  &none  &none           &kp UP_ARROW    &none            &none    &none  &none     &kp PAGE_UP    &none    &none  &trans
-&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &trans
-&trans  &none  &none           &none           &none            &none    &none  &none     &none          &none    &none  &trans
-                               &none           &none            &none    &none  &none     &none
+&trans  &none  &kp HOME        &kp UP_ARROW    &kp END          &none    &none  &none  &none  &none  &none  &trans
+&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &none  &none  &none  &none  &trans
+&trans  &none  &kp PAGE_DOWN   &none           &kp PAGE_UP      &none    &none  &none  &none  &none  &none  &trans
+                               &none           &none            &none    &none  &none  &none
             >;
         };
 
