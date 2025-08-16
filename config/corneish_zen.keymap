@@ -112,10 +112,10 @@
             label = "Qwer-Mac";
             display-name = "Qwer-Mac";
             bindings = <
-&kp TAB       &kp Q            &kp W                &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
-&none         &hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_GUI SEMI  &none
-&kp LEFT_ALT  &kp Z            &kp X                &kp C              &kp V         &kp B               &kp N                           &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_ALT
-                                                    &mol 2 ESC         &mor 1 SPACE  &mor 6 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 7 RETURN  &mor 8 BACKSPACE
+&none         &kp Q            &kp W                &kp E              &kp R         &kp T         &kp Y               &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
+&none         &hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G         &kp H               &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_GUI SEMI  &none
+&kp LEFT_ALT  &kp Z            &kp X                &kp C              &kp V         &kp B         &kp N               &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_ALT
+                                                    &mol 2 ESC         &mor 1 SPACE  &mor 6 TAB    &as PIPE BACKSLASH  &mor 7 RETURN  &mor 8 BACKSPACE
             >;
         };
 
@@ -150,10 +150,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q            &kp W                &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
-&none         &hml LEFT_ALT A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT SEMI  &none
-&kp LEFT_GUI  &kp Z            &kp X                &kp C              &kp V         &kp B               &kp N                           &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_GUI
-                                                    &mol 5 ESC         &mor 4 SPACE  &mor 6 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 7 RETURN  &mor 8 BACKSPACE
+&none         &kp Q            &kp W                &kp E              &kp R         &kp T         &kp Y               &kp U          &kp I                &kp O                 &kp P                &kp CAPSLOCK
+&none         &hml LEFT_ALT A  &hml LEFT_CONTROL S  &hml LEFT_SHIFT D  &kp F         &kp G         &kp H               &kp J          &hmr RIGHT_SHIFT K   &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT SEMI  &none
+&kp LEFT_GUI  &kp Z            &kp X                &kp C              &kp V         &kp B         &kp N               &kp M          &as LESS_THAN COMMA  &as GREATER_THAN DOT  &as QUESTION SLASH   &kp RIGHT_GUI
+                                                    &mol 5 ESC         &mor 4 SPACE  &mor 6 TAB    &as PIPE BACKSLASH  &mor 7 RETURN  &mor 8 BACKSPACE
             >;
 
             label = "Qwer-Win";
