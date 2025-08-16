@@ -4,7 +4,7 @@
 
 > [!IMPORTANT]
 >
-> **For macOS, please swap "Command" and "Option" in keyboard settings.
+> **For macOS, please swap "Command" and "Option" in keyboard settings.**
 
 <img src="keymap-drawer/corneish_zen.svg" >
 
