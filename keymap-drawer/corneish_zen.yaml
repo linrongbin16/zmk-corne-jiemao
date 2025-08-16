@@ -229,8 +229,8 @@ layers:
   - {type: none}
   - $$mdi:download-circle$$
   - {type: none}
-  - {type: none}
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:bluetooth-off$$', h: '2'}
   - {t: '$$mdi:bluetooth$$', h: '2'}
