@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
+  - $$mdi:apple-keyboard-caps$$
   - {type: none}
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - H
   - J
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: ;, h: ':', s: ':'}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-caps$$
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
+  - {type: none}
+  - $$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -44,7 +44,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Edit-Mac:
-  - {type: none}
+  - {t: ▽, type: trans}
   - Gui+Q
   - Gui+W
   - Gui+E
@@ -55,7 +55,7 @@ layers:
   - Gui+I
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+A
   - Gui+S
@@ -68,7 +68,7 @@ layers:
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
+  - {t: ▽, type: trans}
   - Gui+Z
   - Gui+X
   - Gui+C
@@ -79,7 +79,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: held}
   - {type: none}
@@ -99,9 +99,9 @@ layers:
   - F9
   - {type: none}
   - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
   - {type: none}
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {type: none}
   - {type: none}
@@ -110,8 +110,8 @@ layers:
   - F5
   - F6
   - {type: none}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {type: none}
   - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
   - {t: Clear, s: '$$mdi:bluetooth-off$$'}
   - {type: none}
@@ -141,20 +141,20 @@ layers:
   - I
   - O
   - P
+  - $$mdi:apple-keyboard-caps$$
   - {type: none}
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - H
   - J
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: ':', s: ':'}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-caps$$
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
@@ -173,7 +173,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Edit-Win:
-  - {type: none}
+  - {t: ▽, type: trans}
   - Ctl+Q
   - Ctl+W
   - Ctl+E
@@ -184,7 +184,7 @@ layers:
   - Ctl+I
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+A
   - Ctl+S
@@ -197,7 +197,7 @@ layers:
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
+  - {t: ▽, type: trans}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -208,7 +208,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: held}
   - {type: none}
@@ -228,7 +228,7 @@ layers:
   - F9
   - {type: none}
   - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
+  - {type: none}
   - {type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
@@ -239,8 +239,8 @@ layers:
   - F5
   - F6
   - {type: none}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
   - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
   - {t: Clear, s: '$$mdi:bluetooth-off$$'}
   - {type: none}
@@ -259,7 +259,7 @@ layers:
   - {type: none}
   - $$mdi:backspace-reverse$$
   Nav:
-  - {type: none}
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: none}
   - $$mdi:arrow-up$$
@@ -270,7 +270,7 @@ layers:
   - PgUp
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: none}
   - $$mdi:arrow-left$$
@@ -283,6 +283,7 @@ layers:
   - END
   - {type: none}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -293,8 +294,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: none}
   - {type: held}
@@ -302,7 +302,7 @@ layers:
   - {type: none}
   - {type: none}
   Num:
-  - {type: none}
+  - {t: ▽, type: trans}
   - {type: none}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -313,9 +313,9 @@ layers:
   - ->
   - =>
   - {type: none}
-  - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: \, h: '|', s: '|'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -326,8 +326,8 @@ layers:
   - '!='
   - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: '''', h: '"', s: '"'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -337,7 +337,7 @@ layers:
   - +=
   - -=
   - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
@@ -345,7 +345,7 @@ layers:
   - {type: held}
   - {type: none}
   Sym:
-  - {type: none}
+  - {t: ▽, type: trans}
   - {type: none}
   - '&'
   - '*'
@@ -356,9 +356,9 @@ layers:
   - ->
   - =>
   - {type: none}
-  - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
+  - {t: ▽, type: trans}
+  - '|'
   - $
   - '%'
   - ^
@@ -369,8 +369,8 @@ layers:
   - '!='
   - {type: none}
   - {t: ▽, type: trans}
-  - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
+  - '"'
   - '!'
   - '@'
   - '#'
@@ -380,7 +380,7 @@ layers:
   - +=
   - -=
   - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
   - '{'
   - '}'
   - '~'
