@@ -39,7 +39,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
   - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: \, h: '|', s: '|'}
+  - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
@@ -78,8 +78,8 @@ layers:
   - F1
   - F2
   - F3
-  - {type: none}
-  - {type: none}
+  - {t: Qwer-Win, h: to}
+  - {t: Qwer-Win, h: to}
   - {type: held}
   - {type: none}
   - {type: none}
@@ -88,36 +88,36 @@ layers:
   - $$mdi:backspace-reverse$$
   Nav:
   - {t: ▽, type: trans}
-  - {type: none}
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: none}
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - {type: none}
-  - {type: none}
+  - Ctl+Q
+  - Ctl+W
+  - Ctl+E
+  - Ctl+R
+  - Ctl+T
+  - Ctl+Y
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
+  - Ctl+G
+  - Ctl+H
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - PgDn
-  - {type: none}
-  - PgUp
-  - {type: none}
-  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - Ctl+N
   - {type: none}
   - {type: none}
   - {type: none}
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: none}
   - {type: held}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
