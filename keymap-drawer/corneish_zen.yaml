@@ -263,7 +263,7 @@ layers:
   - Alt+Q
   - Alt+W
   - Alt+E
-  - Gui+R
+  - Alt+R
   - Alt+T
   - Alt+Y
   - {type: none}
