@@ -260,36 +260,36 @@ layers:
   - {type: held}
   Edit-Mac:
   - {t: ▽, type: trans}
-  - Gui+Q
-  - Gui+W
-  - Gui+E
+  - Alt+Q
+  - Alt+W
+  - Alt+E
   - Gui+R
-  - Gui+T
-  - Gui+Y
+  - Alt+T
+  - Alt+Y
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+A
-  - Gui+S
-  - Gui+D
-  - Gui+F
-  - Gui+G
-  - Gui+H
+  - Alt+A
+  - Alt+S
+  - Alt+D
+  - Alt+F
+  - Alt+G
+  - Alt+H
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Z
-  - Gui+X
-  - Gui+C
-  - Gui+V
-  - Gui+B
-  - Gui+N
+  - Alt+Z
+  - Alt+X
+  - Alt+C
+  - Alt+V
+  - Alt+B
+  - Alt+N
   - {type: none}
   - {type: none}
   - {type: none}
