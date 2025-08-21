@@ -1,5 +1,48 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
+  Qwer-Mac:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:apple-keyboard-caps$$
+  - {type: none}
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: ':', s: ':'}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>', s: '>'}
+  - {t: /, h: '?', s: '?'}
+  - $$mdi:apple-keyboard-command$$
+  - {t: ESC, h: Fun}
+  - {t: '$$mdi:keyboard-space$$', h: Edit-Mac}
+  - {t: \, h: Nav, s: '|'}
+  - {t: '''', h: '"', s: '"'}
+  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:backspace-outline$$', h: Sym}
   Qwer-Win:
   - $$mdi:keyboard-tab$$
   - Q
@@ -38,7 +81,7 @@ layers:
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
+  - {t: '$$mdi:keyboard-space$$', h: Edit-Win}
   - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
@@ -78,7 +121,7 @@ layers:
   - F1
   - F2
   - F3
-  - {t: Qwer-Win, h: to}
+  - {t: Qwer-Mac, h: to}
   - {t: Qwer-Win, h: to}
   - {type: held}
   - {type: none}
@@ -88,43 +131,43 @@ layers:
   - $$mdi:backspace-reverse$$
   Nav:
   - {t: ▽, type: trans}
-  - Ctl+Q
-  - Ctl+W
-  - Ctl+E
-  - Ctl+R
-  - Ctl+T
-  - Ctl+Y
+  - {type: none}
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+A
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
-  - Ctl+G
-  - Ctl+H
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
   - {type: none}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+B
-  - Ctl+N
+  - PgDn
+  - {type: none}
+  - PgUp
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
-  - {type: held}
+  - {type: none}
   - {type: held}
   - {type: none}
   - {type: none}
@@ -215,3 +258,89 @@ layers:
   - {type: none}
   - {type: none}
   - {type: held}
+  Edit-Mac:
+  - {t: ▽, type: trans}
+  - Gui+Q
+  - Gui+W
+  - Gui+E
+  - Gui+R
+  - Gui+T
+  - Gui+Y
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+A
+  - Gui+S
+  - Gui+D
+  - Gui+F
+  - Gui+G
+  - Gui+H
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+B
+  - Gui+N
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  Edit-Win:
+  - {t: ▽, type: trans}
+  - Ctl+Q
+  - Ctl+W
+  - Ctl+E
+  - Ctl+R
+  - Ctl+T
+  - Ctl+Y
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
+  - Ctl+G
+  - Ctl+H
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - Ctl+N
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
