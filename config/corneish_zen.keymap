@@ -164,7 +164,7 @@
 
         Edit-Mac {
             bindings = <
-&trans  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LG(R)  &kp LA(T)    &kp LA(Y)  &none              &none            &none          &none  &trans
+&trans  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)    &kp LA(Y)  &none              &none            &none          &none  &trans
 &trans  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)    &kp LA(H)  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
 &trans  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)    &kp LA(N)  &none              &none            &none          &none  &trans
                               &none      &none      &none        &none      &none              &none
