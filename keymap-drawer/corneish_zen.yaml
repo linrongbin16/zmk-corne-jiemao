@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
-  Qwer:
+  Qwer-Win:
   - $$mdi:keyboard-tab$$
   - Q
   - W

@@ -216,8 +216,8 @@ rect.held, rect.combo.held {
     fill: #ffc;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-Qwer">
-<text x="0" y="28" class="label" id="Qwer">Qwer:</text>
+<g transform="translate(40, 0)" class="layer-Qwer-Win">
+<text x="0" y="28" class="label" id="Qwer-Win">Qwer-Win:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
