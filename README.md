@@ -6,7 +6,7 @@
 >
 > **For macOS, please swap "Command" and "Option" in keyboard settings.**
 
-<img src="keymap-drawer/corneish_zen.svg" >
+<img src="image/corneish_zen.svg" >
 
 ## Acknowledgement
 
