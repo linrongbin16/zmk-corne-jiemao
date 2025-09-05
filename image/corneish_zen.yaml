@@ -33,8 +33,8 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
@@ -76,8 +76,8 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
