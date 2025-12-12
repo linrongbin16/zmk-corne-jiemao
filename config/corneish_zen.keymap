@@ -110,19 +110,19 @@
 
         Qwer-Mac {
             bindings = <
-&kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
-&kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
-&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
-                                          &mol 2 ESC         &mor 6 SPACE  &mor 3 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
+&kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T            &kp Y                &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
+&kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G            &kp H                &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
+&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B            &kp N                &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
+                                          &mol 2 ESC         &mor 6 SPACE  &kp BACKSLASH    &mor 3 SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
             >;
         };
 
         Qwer-Win {
             bindings = <
-&kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
-&kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
-&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
-                                          &mol 2 ESC         &mor 7 SPACE  &mor 3 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
+&kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T            &kp Y                &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
+&kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G            &kp H                &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
+&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B            &kp N                &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
+                                          &mol 2 ESC         &mor 7 SPACE  &kp BACKSLASH    &mor 3 SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
             >;
         };
 
