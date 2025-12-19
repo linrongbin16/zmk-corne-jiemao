@@ -388,14 +388,15 @@ rect.held, rect.combo.held {
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">\</text>
-<text x="0" y="-38" class="key shifted">|</text>
+<a href="#Nav">
+<text x="0" y="38" class="key hold layer-activator">Nav</text>
+</a><text x="0" y="-38" class="key shifted">|</text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">&#x27;</text>
-<a href="#Nav">
-<text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted">&quot;</text>
+<text x="0" y="38" class="key hold">&quot;</text>
+<text x="0" y="-38" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -583,14 +584,15 @@ rect.held, rect.combo.held {
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">\</text>
-<text x="0" y="-38" class="key shifted">|</text>
+<a href="#Nav">
+<text x="0" y="38" class="key hold layer-activator">Nav</text>
+</a><text x="0" y="-38" class="key shifted">|</text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">&#x27;</text>
-<a href="#Nav">
-<text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted">&quot;</text>
+<text x="0" y="38" class="key hold">&quot;</text>
+<text x="0" y="-38" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -914,11 +916,11 @@ rect.held, rect.combo.held {
 <g transform="translate(286, 213) rotate(15.0)" class="key none keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(351, 224) rotate(30.0)" class="key none keypos-38">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key none"/>
-</g>
-<g transform="translate(489, 224) rotate(-30.0)" class="key held keypos-39">
+<g transform="translate(351, 224) rotate(30.0)" class="key held keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
+</g>
+<g transform="translate(489, 224) rotate(-30.0)" class="key none keypos-39">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key none"/>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key none keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
