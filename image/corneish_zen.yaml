@@ -39,8 +39,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Mac}
-  - {t: \, s: '|'}
-  - {t: '''', h: Nav, s: '"'}
+  - {t: \, h: Nav, s: '|'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Qwer-Win:
@@ -82,8 +82,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ESC, h: Fun}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Win}
-  - {t: \, s: '|'}
-  - {t: '''', h: Nav, s: '"'}
+  - {t: \, h: Nav, s: '|'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - {t: '$$mdi:backspace-outline$$', h: Sym}
   Fun:
@@ -168,8 +168,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: none}
   - {type: none}
-  - {type: none}
   - {type: held}
+  - {type: none}
   - {type: none}
   - {type: none}
   Num:
