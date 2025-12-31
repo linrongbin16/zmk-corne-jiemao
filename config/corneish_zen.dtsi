@@ -83,11 +83,6 @@
     };
 };
 
-/* BOARD_ENABLE_DCDC & BOARD_ENABLE_DCDC_HV */
-&reg0 {
-    status = "okay";
-};
-
 &flash0 {
     /*
      * For more information, see:
