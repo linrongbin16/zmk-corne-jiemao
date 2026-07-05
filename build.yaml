@@ -1,7 +1,7 @@
 include:
-  - board: corneish_zen_v2_left
+  - board: corneish_zen_left//zmk
     snippet: nrf52840-nosd
-  - board: corneish_zen_v2_right
+  - board: corneish_zen_right//zmk
     snippet: nrf52840-nosd
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
