@@ -21,7 +21,6 @@
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -33,7 +32,6 @@
 
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -47,7 +45,6 @@
 
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -61,7 +58,6 @@
 
         mol: mo_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_LEFT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -75,7 +71,6 @@
 
         mor: mo_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_RIGHT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -99,7 +94,6 @@
                 <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>;
 
-            label = "TAP2_MACRO";
         };
     };
 
