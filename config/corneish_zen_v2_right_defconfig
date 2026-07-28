@@ -14,8 +14,8 @@ CONFIG_PINCTRL=y
 # enable GPIO
 CONFIG_GPIO=y
 
-# Enable SPI
-CONFIG_SPI_NRFX=y
+# Since zmk 0.4, no longer need this config
+# CONFIG_SPI_NRFX=y
 
 # Enable writing to flash
 CONFIG_USE_DT_CODE_PARTITION=y
