@@ -12,7 +12,7 @@
 | 状态 | 数量 | 条目 |
 | --- | --- | --- |
 | ✅ 已修复 | 1 | 一、5 个死文件 |
-| 📌 已确认（设计决定） | 1 | 二、墨水屏关闭 |
+| ✅ 已清理 | 1 | 二、墨水屏关闭（设计决定）后的死配置 |
 | 🔴 待处理 | 2 | 三、underglow 全死；四、DCDC 无处安放 |
 | 🟡 待处理 | 4 | 五～八 |
 | 🟢 待处理 | 1 | 九、零碎问题 |
@@ -20,7 +20,7 @@
 这份 config **能正常构建、能正常使用**（CI 全绿，DTS/Kconfig 均无 error），但：
 
 1. **有 5 个文件从未被任何构建路径读取**（`config/*_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`），写在里面的配置全部无效；→ **已修复**（PR #35，见第一条）
-2. 因为 `CONFIG_ZMK_DISPLAY=n`，**墨水屏连同 SPI / EPD / LVGL 整体没编译**，overlay 里约 60 行面向屏幕的配置是纯 dead weight；→ **已确认是有意关闭屏幕**（见第二条），剩下的是清理工作
+2. 因为 `CONFIG_ZMK_DISPLAY=n`，**墨水屏连同 SPI / EPD / LVGL 整体没编译**，overlay 里约 60 行面向屏幕的配置是纯 dead weight；→ **已确认是有意关闭屏幕**并**已清理干净**（见第二条）
 3. **underglow 从未生效**（`CONFIG_ZMK_RGB_UNDERGLOW` 未开启，`led_strip` 节点不参与编译）；
 4. DCDC 的两次提交（`6037d1d` → `492c431`）来回挪动，**两次都无效**，因为位置始终不在 BOARD_ROOT 下。
 
@@ -101,16 +101,16 @@ osource "$(ZMK_CONFIG)/boards/shields/*/Kconfig.shield"
 
 ## 🔵 二、墨水屏被关掉，连带 SPI / EPD / LVGL 全部失活
 
-> ### 📌 状态：确认关闭墨水屏（设计决定，非缺陷）
+> ### 📌 状态：确认关闭墨水屏（设计决定，非缺陷）· 死配置已清理（`f0c1484`、`7b333c8`）
 >
 > 经确认，`CONFIG_ZMK_DISPLAY=n` 是**有意为之**——关闭墨水屏以换取更长续航。这是本机型的取舍，不是配置失误，**不需要修复**。
 >
-> 但结论要落到代码上：既然确定不要屏幕，`overlay` 里那套面向面板的配置应一并清掉，不要留半套。待清理清单见本节末尾。
+> 面板配置已按「既然不要屏幕就别留半套」的原则全部删除，清单见本节末尾。删除后重新构建，三个 UF2 与删除前**逐字节相同**（`corneish_zen_v2_left` 440832 B、`_right` 341504 B、`settings_reset` 92672 B），说明这些配置确实一行都没进固件。
 
-`config/corneish_zen.conf:29` 的 `CONFIG_ZMK_DISPLAY=n` 覆盖了上游 defconfig 的 `=y`，而 overlay 里仍完整配着面板：
+清理前，`config/corneish_zen.conf:29` 的 `CONFIG_ZMK_DISPLAY=n` 覆盖了上游 defconfig 的 `=y`，而 overlay 里仍完整配着面板：
 
-- `config/corneish_zen_v2_left.overlay:94-115`：`&spi0` + `epd: il0323@0`（`gooddisplay,il0323`，80×128，4MHz）
-- `config/corneish_zen_v2_left.overlay:63-92`：`spi0` / `spi3` 的 pinctrl
+- `config/corneish_zen_v2_left.overlay:94-115`（清理前行号）：`&spi0` + `epd: il0323@0`（`gooddisplay,il0323`，80×128，4MHz）
+- `config/corneish_zen_v2_left.overlay:63-92`（清理前行号）：`spi0` / `spi3` 的 pinctrl
 - chosen 里 `zephyr,display = &epd`、`zmk,display = &epd`
 
 ### 实际结果
@@ -126,22 +126,26 @@ osource "$(ZMK_CONFIG)/boards/shields/*/Kconfig.shield"
 
 **已决策：有意关闭**（省电优先）。因此不需要改回 `CONFIG_ZMK_DISPLAY=y`，而是走「有意的」那一条：清理死配置。
 
-### 待清理清单（因确认关闭屏幕而变成纯 dead weight）
+### 清理清单（因确认关闭屏幕而变成纯 dead weight）
 
-| 位置 | 内容 | 处理建议 |
+| 位置（清理前行号） | 内容 | 状态 |
 | --- | --- | --- |
-| `left.overlay:63-92` / `right.overlay` 对应段 | `spi0_default`/`spi0_sleep`、`spi3_default`/`spi3_sleep` 四组 pinctrl | 若 underglow 也不要（见第三条），可全删；若保留 underglow 则只留 spi3 |
-| `left.overlay:94-115` / `right.overlay` 对应段 | `&spi0` 节点 + `epd: il0323@0`（`gooddisplay,il0323`，dc/busy/reset gpios，pwr/cdi/tcon） | 删 |
-| `left.overlay:14` / `right.overlay` | chosen `zephyr,display = &epd` | 删 |
-| `dtsi:22`（`config/corneish_zen.dtsi`） | chosen `zmk,display = &epd` | 删（`zmk,display` 在 v0.3 源码中本就无人读取，是无效遗留） |
+| `left.overlay:63-92` / `right.overlay:100-129` | `spi0_default`/`spi0_sleep` 两组 pinctrl | ✅ 已删 |
+| `left.overlay:94-115` / `right.overlay:131-152` | `&spi0` 节点 + `epd: il0323@0`（`gooddisplay,il0323`，dc/busy/reset gpios，pwr/cdi/tcon） | ✅ 已删 |
+| `left.overlay:14` / `right.overlay:11` | chosen `zephyr,display = &epd` | ✅ 已删 |
+| `dtsi:22`（`config/corneish_zen.dtsi`） | chosen `zmk,display = &epd` | ✅ 已删（`zmk,display` 在 v0.3 源码中本就无人读取，是无效遗留） |
+| `spi3_default`/`spi3_sleep` + `led_strip` | 属于 underglow，不是屏幕 | ⏸ 保留（独立议题，见第三条） |
 | `keymap` / `conf` | 无屏幕相关配置需要连带处理 | — |
 
-**保留建议**：`config/corneish_zen.conf:29` 的 `CONFIG_ZMK_DISPLAY=n` **要保留并加注释**——它现在是有意义的设计声明，且必须压过上游 defconfig 的 `=y`（上游 `corneish_zen_v2_left_defconfig:10` 默认开着）。建议写成：
+**保留**：`config/corneish_zen.conf:29` 的 `CONFIG_ZMK_DISPLAY=n` 保留并已加注释——它现在是有意义的设计声明，且必须压过上游 defconfig 的 `=y`（上游 `corneish_zen_v2_left_defconfig:10` 默认开着）：
 
 ```conf
-# 墨水屏有意关闭以延长续航；上游 board defconfig 默认 ZMK_DISPLAY=y，此处显式覆盖
+# 屏幕：有意关闭以延长续航。上游 board defconfig 默认 ZMK_DISPLAY=y，
+# 此处显式覆盖，overlay 里也不应再出现 epd / spi0 相关配置。
 CONFIG_ZMK_DISPLAY=n
 ```
+
+**注意**：上游 `app/boards/arm/corneish_zen/corneish_zen_v2_{left,right}.dts` 自己仍定义着 `&spi0` + `epd` + chosen `zephyr,display`（引脚与本地不同）。本地 overlay 删掉这些节点**不会**让它们消失——它们仍在 DTS 树里，只是因 `CONFIG_ZMK_DISPLAY=n` 使 `config SPI default y` 不生效而不会被实例化。想连 DTS 层也清干净需要 `/delete-node/ &epd;`，但那属于修改上游 board 语义，风险大于收益，不建议。
 
 ---
 
@@ -150,7 +154,8 @@ CONFIG_ZMK_DISPLAY=n
 | 位置 | 内容 |
 | --- | --- |
 | `config/corneish_zen.conf:5` | `CONFIG_WS2812_STRIP=y` |
-| `config/corneish_zen_v2_left.overlay:116-137` | `led_strip: ws2812@0`（`worldsemi,ws2812-spi`，chain-length 12） |
+| `config/corneish_zen_v2_left.overlay:77-99` | `&spi3` + `led_strip: ws2812@0`（`worldsemi,ws2812-spi`，chain-length 12） |
+| `config/corneish_zen_v2_right.overlay:75-96` | 同上 |
 | overlay chosen | `zmk,underglow = &led_strip` |
 
 但 `CONFIG_ZMK_RGB_UNDERGLOW`（`app/Kconfig:278` 的 menuconfig，`:280` 才 `select LED_STRIP`）从未打开：
@@ -358,7 +363,7 @@ snprintf(setting_path, sizeof(setting_path), "ext_power/state/%s", ext_power->na
 
 1. ~~**先定两件事**：屏幕要不要（第二条）、underglow 要不要（第三条）。这决定了是「删 ~60 行死配置」还是「打开 `CONFIG_ZMK_DISPLAY=y` + `CONFIG_ZMK_RGB_UNDERGLOW=y`」。~~ **屏幕已确认关闭**；underglow 仍待决定。
 2. ~~**删死文件**：`config/corneish_zen_v2_{left,right}_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`（共 5 个、204 行，零功能损失）。~~ **已完成**（PR #35）；DCDC 需单独决策。
-3. **清理屏幕死配置**：按第二条的「待清理清单」删掉 overlay 里的 `spi0`/`epd`/`zephyr,display`、dtsi 里的 `zmk,display`，并在 `corneish_zen.conf:29` 给 `CONFIG_ZMK_DISPLAY=n` 加注释说明这是有意关闭。
+3. ~~**清理屏幕死配置**：按第二条的「待清理清单」删掉 overlay 里的 `spi0`/`epd`/`zephyr,display`、dtsi 里的 `zmk,display`，并在 `corneish_zen.conf:29` 给 `CONFIG_ZMK_DISPLAY=n` 加注释说明这是有意关闭。~~ **已完成**（`f0c1484`、`7b333c8`，构建产物逐字节不变）。
 4. **删 `config/corneish_zen.dtsi` + overlay 的 `#include` + keymap:13-17 的 chosen**，切到 physical layout（消掉 `#warning`，为升级铺路）。
 5. **抽公共 overlay dtsi**，消掉 ~130 行重复。
 6. 清 `label`、`combos` 空壳、`five_column_transform`、vbatt 残留属性、缩进、注释掉的代码块；README 补 3 行「这块板是什么 / pin 在 v0.3 / 屏幕有意关闭」。
@@ -373,12 +378,12 @@ snprintf(setting_path, sizeof(setting_path), "ext_power/state/%s", ext_power->na
 | --- | --- | --- |
 | `config/corneish_zen.keymap` | 210 | ✅ |
 | `config/corneish_zen.conf` | 30 | ✅ |
-| `config/corneish_zen_v2_left.overlay` | 138 | ✅ |
-| `config/corneish_zen_v2_right.overlay` | 152 | ✅ |
-| `config/corneish_zen.dtsi` | 120 | ⚠️ 仅经 overlay `#include` 生效 |
+| `config/corneish_zen_v2_left.overlay` | 138 → 99 | ✅ |
+| `config/corneish_zen_v2_right.overlay` | 152 → 112 | ✅ |
+| `config/corneish_zen.dtsi` | 120 → 119 | ⚠️ 仅经 overlay `#include` 生效 |
 | `config/corneish_zen_v2_left_defconfig` | 59 | ❌ 已删除 |
 | `config/corneish_zen_v2_right_defconfig` | 59 | ❌ 已删除 |
 | `config/Kconfig` | 10 | ❌ 已删除 |
 | `config/Kconfig.board` | 19 | ❌ 已删除 |
 | `config/Kconfig.defconfig` | 57 | ❌ 已删除 |
-| **合计** | **854 → 650** | 实际生效 530 行（+ `corneish_zen.dtsi` 的 1 行） |
+| **合计** | **854 → 570** | 删除死文件 −204 行、清理屏幕 −80 行，剩余 570 行全部真正生效 |
