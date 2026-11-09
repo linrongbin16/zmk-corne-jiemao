@@ -11,7 +11,7 @@
 
 这份 config **能正常构建、能正常使用**（CI 全绿，DTS/Kconfig 均无 error），但：
 
-1. **有 5 个文件从未被任何构建路径读取**（`config/*_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`），写在里面的配置全部无效；
+1. **有 5 个文件从未被任何构建路径读取**（`config/*_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`），写在里面的配置全部无效；→ **本分支已删除**
 2. 因为 `CONFIG_ZMK_DISPLAY=n`，**墨水屏连同 SPI / EPD / LVGL 整体没编译**，overlay 里约 60 行面向屏幕的配置是纯 dead weight；
 3. **underglow 从未生效**（`CONFIG_ZMK_RGB_UNDERGLOW` 未开启，`led_strip` 节点不参与编译）；
 4. DCDC 的两次提交（`6037d1d` → `492c431`）来回挪动，**两次都无效**，因为位置始终不在 BOARD_ROOT 下。
@@ -21,6 +21,9 @@
 ---
 
 ## 🔴 一、5 个文件是死文件（最严重）
+
+> **状态：已修复**。本分支删除了以下 5 个文件（`delete dead config files` 提交），零功能变化——它们从未被读取。
+> DCDC（第四条）需要单独决策：删掉后 DCDC 仍然不生效，若要启用需走 `config/boards/` 布局真正接管 board 定义。
 
 构建日志里只有这两行配置加载记录：
 
@@ -313,12 +316,12 @@ snprintf(setting_path, sizeof(setting_path), "ext_power/state/%s", ext_power->na
 ## 建议的落地顺序
 
 1. **先定两件事**：屏幕要不要（第二条）、underglow 要不要（第三条）。这决定了是「删 ~60 行死配置」还是「打开 `CONFIG_ZMK_DISPLAY=y` + `CONFIG_ZMK_RGB_UNDERGLOW=y`」。
-2. **删死文件**：`config/corneish_zen_v2_{left,right}_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`（共 5 个、204 行，零功能损失）。DCDC 单独决策。
+2. ~~**删死文件**：`config/corneish_zen_v2_{left,right}_defconfig`、`config/Kconfig`、`config/Kconfig.board`、`config/Kconfig.defconfig`（共 5 个、204 行，零功能损失）。~~ **本分支已完成**；DCDC 需单独决策。
 3. **删 `config/corneish_zen.dtsi` + overlay 的 `#include` + keymap:13-17 的 chosen**，切到 physical layout（消掉 `#warning`，为升级铺路）。
 4. **抽公共 overlay dtsi**，消掉 ~130 行重复。
 5. 清 `label`、`combos` 空壳、`five_column_transform`、vbatt 残留属性、缩进、注释掉的代码块；README 补 3 行「这块板是什么 / pin 在 v0.3 / 屏幕状态」。
 
-全部做完，`config/` 大约能从 911 行降到 500 行以内，且**没有一行是「写了但不生效」的**——这本身就是本次评审里最值得改的东西。
+全部做完，`config/` 大约能从 854 行降到 500 行以内，且**没有一行是「写了但不生效」的**——这本身就是本次评审里最值得改的东西。
 
 ---
 
@@ -331,9 +334,9 @@ snprintf(setting_path, sizeof(setting_path), "ext_power/state/%s", ext_power->na
 | `config/corneish_zen_v2_left.overlay` | 138 | ✅ |
 | `config/corneish_zen_v2_right.overlay` | 152 | ✅ |
 | `config/corneish_zen.dtsi` | 120 | ⚠️ 仅经 overlay `#include` 生效 |
-| `config/corneish_zen_v2_left_defconfig` | 59 | ❌ |
-| `config/corneish_zen_v2_right_defconfig` | 59 | ❌ |
-| `config/Kconfig` | 10 | ❌ |
-| `config/Kconfig.board` | 19 | ❌ |
-| `config/Kconfig.defconfig` | 57 | ❌ |
-| **合计** | **911** | 实际生效约 **530** 行 |
+| `config/corneish_zen_v2_left_defconfig` | 59 | ❌ 已删除 |
+| `config/corneish_zen_v2_right_defconfig` | 59 | ❌ 已删除 |
+| `config/Kconfig` | 10 | ❌ 已删除 |
+| `config/Kconfig.board` | 19 | ❌ 已删除 |
+| `config/Kconfig.defconfig` | 57 | ❌ 已删除 |
+| **合计** | **854 → 650** | 实际生效 530 行（+ `corneish_zen.dtsi` 的 1 行） |
