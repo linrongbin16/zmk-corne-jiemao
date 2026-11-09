@@ -13,19 +13,19 @@ layers:
   - O
   - P
   - $$mdi:apple-keyboard-caps$$
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - A
-  - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - H
   - J
-  - {t: K, h: RSHFT}
-  - {t: L, h: RALT}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ;, h: ':', s: ':'}
-  - RCTRL
-  - LGUI
+  - $$mdi:apple-keyboard-control$$
+  - LOpt
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: '?', s: '?'}
-  - RGUI
-  - {t: ESC, h: Fun}
+  - ROpt
+  - {t: ESC, h: Fun-Mac}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Mac}
   - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
-  - {t: '$$mdi:backspace-outline$$', h: Sym}
+  - {t: '$$mdi:keyboard-return$$', h: Num-Mac}
+  - {t: '$$mdi:backspace-outline$$', h: Sym-Mac}
   Qwer-Win:
   - $$mdi:keyboard-tab$$
   - Q
@@ -56,19 +56,19 @@ layers:
   - O
   - P
   - $$mdi:apple-keyboard-caps$$
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - A
-  - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
+  - {t: S, h: LAlt}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - H
   - J
-  - {t: K, h: RSHFT}
-  - {t: L, h: RALT}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: RAlt}
   - {t: ;, h: ':', s: ':'}
-  - RCTRL
-  - LGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:microsoft-windows$$
   - Z
   - X
   - C
@@ -79,14 +79,14 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: '?', s: '?'}
-  - RGUI
-  - {t: ESC, h: Fun}
+  - $$mdi:microsoft-windows$$
+  - {t: ESC, h: Fun-Win}
   - {t: '$$mdi:keyboard-space$$', h: Edit-Win}
   - {t: \, h: Nav, s: '|'}
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
-  - {t: '$$mdi:backspace-outline$$', h: Sym}
-  Fun:
+  - {t: '$$mdi:keyboard-return$$', h: Num-Win}
+  - {t: '$$mdi:backspace-outline$$', h: Sym-Win}
+  Fun-Mac:
   - $$mdi:download-circle$$
   - {t: '$$mdi:bluetooth$$', h: '1'}
   - {t: '$$mdi:bluetooth$$', h: '2'}
@@ -101,8 +101,51 @@ layers:
   - $$mdi:download-circle$$
   - {t: ▽, type: trans}
   - {type: none}
-  - LALT
-  - LSHFT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: none}
+  - {type: none}
+  - F11
+  - F4
+  - F5
+  - F6
+  - {type: none}
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: Clear, h: All, s: '$$mdi:bluetooth-off$$'}
+  - {t: Clear, s: '$$mdi:bluetooth-off$$'}
+  - {type: none}
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:toggle-switch$$', s: '$$mdi:usb$$'}
+  - F12
+  - F1
+  - F2
+  - F3
+  - {t: Qwer-Mac, h: to}
+  - {t: Qwer-Win, h: to}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:backspace-reverse$$
+  Fun-Win:
+  - $$mdi:download-circle$$
+  - {t: '$$mdi:bluetooth$$', h: '1'}
+  - {t: '$$mdi:bluetooth$$', h: '2'}
+  - {t: '$$mdi:bluetooth$$', h: '3'}
+  - {t: '$$mdi:bluetooth$$', h: '4'}
+  - {t: '$$mdi:bluetooth$$', h: '5'}
+  - F10
+  - F7
+  - F8
+  - F9
+  - {type: none}
+  - $$mdi:download-circle$$
+  - {t: ▽, type: trans}
+  - {type: none}
+  - LAlt
+  - $$mdi:apple-keyboard-shift$$
   - {type: none}
   - {type: none}
   - F11
@@ -172,7 +215,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  Num:
+  Num-Mac:
   - {t: ▽, type: trans}
   - {type: none}
   - {t: '7', s: '&'}
@@ -193,8 +236,8 @@ layers:
   - {t: '-', s: _}
   - <=
   - '>='
-  - RSHFT
-  - RALT
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,7 +258,50 @@ layers:
   - {type: none}
   - {type: held}
   - {type: none}
-  Sym:
+  Num-Win:
+  - {t: ▽, type: trans}
+  - {type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: \, s: '|'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
+  - <=
+  - '>='
+  - $$mdi:apple-keyboard-shift$$
+  - RAlt
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '''', s: '"'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {type: none}
+  - '!='
+  - +=
+  - -=
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '`', s: '~'}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  Sym-Mac:
   - {t: ▽, type: trans}
   - {type: none}
   - '&'
@@ -236,8 +322,51 @@ layers:
   - _
   - <=
   - '>='
-  - RSHFT
-  - RALT
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '"'
+  - '!'
+  - '@'
+  - '#'
+  - +
+  - {type: none}
+  - '!='
+  - +=
+  - -=
+  - {type: none}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - '~'
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  Sym-Win:
+  - {t: ▽, type: trans}
+  - {type: none}
+  - '&'
+  - '*'
+  - (
+  - )
+  - {type: none}
+  - <-
+  - ->
+  - =>
+  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '|'
+  - $
+  - '%'
+  - ^
+  - _
+  - <=
+  - '>='
+  - $$mdi:apple-keyboard-shift$$
+  - RAlt
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,36 +389,36 @@ layers:
   - {type: held}
   Edit-Mac:
   - {t: ▽, type: trans}
-  - Alt+Q
-  - Alt+W
-  - Alt+E
-  - Alt+R
-  - Alt+T
-  - Alt+Y
+  - LCmd+Q
+  - LCmd+W
+  - LCmd+E
+  - LCmd+R
+  - LCmd+T
+  - LCmd+Y
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+A
-  - Alt+S
-  - Alt+D
-  - Alt+F
-  - Alt+G
-  - Alt+H
+  - LCmd+A
+  - LCmd+S
+  - LCmd+D
+  - LCmd+F
+  - LCmd+G
+  - LCmd+H
   - {type: none}
-  - RSHFT
-  - RALT
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Z
-  - Alt+X
-  - Alt+C
-  - Alt+V
-  - Alt+B
-  - Alt+N
+  - LCmd+Z
+  - LCmd+X
+  - LCmd+C
+  - LCmd+V
+  - LCmd+B
+  - LCmd+N
   - {type: none}
   - {type: none}
   - {type: none}
@@ -322,8 +451,8 @@ layers:
   - Ctl+G
   - Ctl+H
   - {type: none}
-  - RSHFT
-  - RALT
+  - $$mdi:apple-keyboard-shift$$
+  - RAlt
   - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
