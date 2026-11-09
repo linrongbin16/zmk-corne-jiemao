@@ -111,9 +111,9 @@
         Qwer-Mac {
             bindings = <
 &kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
-&kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
-&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
-                                          &mol 2 ESC         &mor 6 SPACE  &mor 3 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
+&kp LEFT_CONTROL  &kp A  &hml LCMD     S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K  &hmr RCMD      L  &as COLON SEMI      &kp RIGHT_CONTROL
+&kp LALT          &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RALT
+                                          &mol 2 ESC         &mor 9 SPACE  &mor 4 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 5 RETURN  &mor 7 BACKSPACE
             >;
         };
 
@@ -121,12 +121,21 @@
             bindings = <
 &kp TAB           &kp Q  &kp W            &kp E              &kp R         &kp T               &kp Y                           &kp U          &kp I               &kp O             &kp P               &kp CAPSLOCK
 &kp LEFT_CONTROL  &kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp F         &kp G               &kp H                           &kp J          &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &as COLON SEMI      &kp RIGHT_CONTROL
-&kp LEFT_GUI      &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RIGHT_GUI
-                                          &mol 2 ESC         &mor 7 SPACE  &mor 3 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 4 RETURN  &mor 5 BACKSPACE
+&kp LWIN          &kp Z  &kp X            &kp C              &kp V         &kp B               &kp N                           &kp M          &kp COMMA           &kp DOT           &as QUESTION SLASH  &kp RWIN
+                                          &mol 3 ESC         &mor 10 SPACE &mor 4 BACKSLASH    &as DOUBLE_QUOTES SINGLE_QUOTE  &mor 6 RETURN  &mor 8 BACKSPACE
             >;
         };
 
-        Fun {
+        Fun-Mac {
+            bindings = <
+&bootloader  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp F10  &kp F7  &kp F8      &kp F9  &none  &bootloader
+&trans       &none           &kp LCMD      &kp LEFT_SHIFT  &none         &none           &kp F11  &kp F4  &kp F5      &kp F6  &none  &none
+&trans       &bt BT_CLR_ALL  &bt BT_CLR    &none           &out OUT_BLE  &out OUT_USB    &kp F12  &kp F1  &kp F2      &kp F3  &to 0  &to 1
+                                           &none           &none         &none           &none    &none   &kp DELETE
+            >;
+        };
+
+        Fun-Win {
             bindings = <
 &bootloader  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp F10  &kp F7  &kp F8      &kp F9  &none  &bootloader
 &trans       &none           &kp LEFT_ALT  &kp LEFT_SHIFT  &none         &none           &kp F11  &kp F4  &kp F5      &kp F6  &none  &none
@@ -144,7 +153,16 @@
             >;
         };
 
-        Num {
+        Num-Mac {
+            bindings = <
+&trans  &none             &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none                        &tap2_macro LESS_THAN MINUS     &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
+&trans  &kp BACKSLASH     &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &kp RIGHT_SHIFT                 &kp RCMD                        &none  &trans
+&trans  &kp SINGLE_QUOTE  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp EQUAL       &none                        &tap2_macro EXCL EQUAL          &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &trans
+                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &none                        &none                           &none
+            >;
+        };
+
+        Num-Win {
             bindings = <
 &trans  &none             &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0    &none                        &tap2_macro LESS_THAN MINUS     &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
 &trans  &kp BACKSLASH     &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp MINUS       &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &kp RIGHT_SHIFT                 &kp RIGHT_ALT                   &none  &trans
@@ -153,7 +171,16 @@
             >;
         };
 
-        Sym {
+        Sym-Mac {
+            bindings = <
+&trans  &none              &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none                        &tap2_macro LESS_THAN MINUS     &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
+&trans  &kp PIPE           &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &kp RIGHT_SHIFT                 &kp RCMD                        &none  &trans
+&trans  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH              &kp PLUS                 &none                        &tap2_macro EXCL EQUAL          &tap2_macro PLUS EQUAL          &tap2_macro MINUS EQUAL         &none  &trans
+                                            &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp TILDE                &none                        &none                           &none
+            >;
+        };
+
+        Sym-Win {
             bindings = <
 &trans  &none              &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none                        &tap2_macro LESS_THAN MINUS     &tap2_macro MINUS GREATER_THAN  &tap2_macro EQUAL GREATER_THAN  &none  &trans
 &trans  &kp PIPE           &kp DOLLAR       &kp PERCENT     &kp CARET             &kp UNDERSCORE           &tap2_macro LESS_THAN EQUAL  &tap2_macro GREATER_THAN EQUAL  &kp RIGHT_SHIFT                 &kp RIGHT_ALT                   &none  &trans
@@ -164,9 +191,9 @@
 
         Edit-Mac {
             bindings = <
-&trans  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)    &kp LA(Y)  &none  &none            &none          &none  &trans
-&trans  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)    &kp LA(H)  &none  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none  &trans
-&trans  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)    &kp LA(N)  &none  &none            &none          &none  &trans
+&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &none  &none            &none          &none  &trans
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &none  &kp RIGHT_SHIFT  &kp RCMD       &none  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &none  &none            &none          &none  &trans
                               &none      &none      &none        &none      &none  &none
             >;
         };
