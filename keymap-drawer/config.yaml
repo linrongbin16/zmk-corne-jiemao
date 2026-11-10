@@ -111,24 +111,12 @@ draw_config:
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>mouse-right-click</title><path d="M13 9V1.07C13.7 1.16 14.37 1.33 15 1.59C17.33 2.53 19.11 4.53 19.75 7C19.91 7.64 20 8.31 20 9H13M17.66 7C17.18 5.65 16.23 4.5 15 3.81V7H17.66M11 9V1.07C7.06 1.56 4 4.92 4 9H11M6.34 20.66C4.84 19.16 4 17.12 4 15V11H20V15C20 17.12 19.16 19.16 17.66 20.66C16.16 22.16 14.12 23 12 23C9.88 23 7.84 22.16 6.34 20.66Z" /></svg>
     mdi:mouse-scroll-wheel: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>mouse-scroll-wheel</title><path d="M11 1.07C7.05 1.56 4 4.92 4 9H11V7.73C10.4 7.39 10 6.74 10 6V4C10 3.26 10.4 2.61 11 2.27V1.07M13 9V7.73C13.6 7.39 14 6.74 14 6V4C14 3.26 13.6 2.61 13 2.27V1.07C16.94 1.56 20 4.92 20 9H13M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15M13 6V4C13 3.45 12.55 3 12 3C11.45 3 11 3.45 11 4V6C11 6.55 11.45 7 12 7C12.55 7 13 6.55 13 6Z" /></svg>
-    mdi:apple-keyboard-command: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>apple-keyboard-command</title><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
-    mdi:apple-keyboard-shift: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>apple-keyboard-shift</title><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
-    mdi:apple-keyboard-control: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>apple-keyboard-control</title><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
-    mdi:microsoft-windows: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>microsoft-windows</title><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
     mdi:apple-keyboard-caps: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>apple-keyboard-caps</title><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
 parse_config:
   mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$
   toggle_label: "to"
-    # Modifier functions: LG(...) only appears in the Mac layers (drawn as Cmd+X)
-  modifier_fn_map:
-    left_gui: LCmd
-    right_gui: RCmd
   raw_binding_map:
     "&tap2_macro LESS_THAN MINUS":
       tap: "<-"
@@ -456,34 +444,28 @@ parse_config:
     PAGE_UP: PgUp
     PAGE_DOWN: PgDn
     # Modifiers
-    LCTRL: $$mdi:apple-keyboard-control$$
-    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
-    RCTRL: $$mdi:apple-keyboard-control$$
-    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
-    LSHFT: $$mdi:apple-keyboard-shift$$
-    LSHIFT: $$mdi:apple-keyboard-shift$$
-    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
-    RSHFT: $$mdi:apple-keyboard-shift$$
-    RSHIFT: $$mdi:apple-keyboard-shift$$
-    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
-    # Alt keys: the Mac layers spell them as LALT/RALT and are drawn as LOpt/ROpt,
-    # the Windows layers spell them as LEFT_ALT/RIGHT_ALT and are drawn as LAlt/RAlt.
-    LALT: LOpt
-    RALT: ROpt
-    LEFT_ALT: LAlt
-    RIGHT_ALT: RAlt
-    # GUI keys: the Mac layers spell them as LCMD/RCMD,
-    # the Windows layers spell them as LWIN/RWIN.
-    LCMD: $$mdi:apple-keyboard-command$$
-    RCMD: $$mdi:apple-keyboard-command$$
-    LWIN: $$mdi:microsoft-windows$$
-    RWIN: $$mdi:microsoft-windows$$
-    LGUI: LGui
-    LEFT_GUI: LGui
-    LEFT_COMMAND: LGui
-    RGUI: RGui
-    RIGHT_GUI: RGui
-    RIGHT_COMMAND: RGui
+    LCTRL: LCTRL
+    LEFT_CONTROL: LCTRL
+    RCTRL: RCTRL
+    RIGHT_CONTROL: RCTRL
+    LALT: LALT
+    LEFT_ALT: LALT
+    RALT: RALT
+    RIGHT_ALT: RALT
+    LSHFT: LSHFT
+    LSHIFT: LSHFT
+    LEFT_SHIFT: LSHFT
+    RSHFT: RSHFT
+    RSHIFT: RSHFT
+    RIGHT_SHIFT: RSHFT
+    LGUI: LGUI
+    LCMD: LGUI
+    LEFT_GUI: LGUI
+    LEFT_COMMAND: LGUI
+    RGUI: RGUI
+    RCMD: RGUI
+    RIGHT_GUI: RGUI
+    RIGHT_COMMAND: RGUI
     # Capslock
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
